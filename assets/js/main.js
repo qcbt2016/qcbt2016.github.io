@@ -90,7 +90,7 @@ $(function() {
 			// set width and margin
 			$('.landing__theme__noun__switcher').width(width);
 			$('.landing__theme__nouns').css('-webkit-transform', 'translateY(-' + margin + 'px)');
-		}, 2000);
+		}, 4000);
 
 		// using the history API
 		$('.landing__href').click(function(e) {
