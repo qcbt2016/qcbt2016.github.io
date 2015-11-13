@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="614px" height="184px" viewBox="0 0 614 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="512" sketch:type="MSArtboardGroup" transform="translate(-2.000000, -2.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(3.000000, 3.000000)">
+                <path d="M6.875,4 C6.875,4 7.77185418,4 8.87384465,4 L145.321163,4 C146.425094,4 147.977378,4.61448455 148.781216,5.3658804 L229.030979,80.3802133" id="Path-1" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="4" cy="4" r="4"></circle>
+                <path d="M441.65625,90.1914062 L581.275028,90.1914062 C582.3807,90.1914062 583.807407,89.4668107 584.46277,88.5714701 L605.625,59.6601562" id="Path-2" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M421.324219,82.4960938 L445.819831,48.1321207 C446.460834,47.2328827 447.87508,46.5039062 448.987793,46.5039062 L587.074166,46.5039062" id="Path-3" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M442.042969,106.625 L476.809498,106.625 C477.915726,106.625 479.45145,107.251136 480.244295,108.02808 L515.625,142.699219" id="Path-4" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M264,117 L281.518478,152.576044 C282.008781,153.571737 283.306517,154.378906 284.40681,154.378906 L321.132812,154.378906" id="Path-5" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M408.121094,117.378906 L408.121094,159.531029 C408.121094,160.634068 407.381767,162.031784 406.46671,162.654993 L385.117188,177.195312" id="Path-6" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M368,82.0507812 L368,52.9648438" id="Path-7" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M306.390625,84.3984375 L306.390625,20.7577476 C306.390625,19.6529864 307.295535,18.7574006 308.384571,18.7574006 L394.906965,18.7574006" id="Path-8" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M62.2148438,98 L165,98" id="Path-9" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M184.652344,117 L157.809739,143.842604 C157.024963,144.627381 155.485146,145.263568 154.398489,145.263568 L107.922639,145.263568" id="Path-10" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <path d="M235.082031,119 L181.268575,172.813456 C180.483858,173.598173 178.95675,174.234312 177.841077,174.234312 L141.521107,174.234312" id="Path-12" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="59" cy="98" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="104" cy="145" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="138" cy="174" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="325" cy="154" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="382" cy="178" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="518" cy="145" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="608" cy="57" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="591" cy="46" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="368" cy="49" r="4"></circle>
+                <circle id="Oval-1" sketch:type="MSShapeGroup" cx="399" cy="19" r="4"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
