@@ -4,11 +4,13 @@
 @import "base/reset";
 @import "base/clearfix";
 @import "base/boxmodel";
+@import "base/modal";
 
 // FONTS
 // -----
 
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,200,300,600,700);
 
 // STYLES
 // ------
@@ -19,6 +21,32 @@ body {
 	// reset font-size
 	font-size: 62.5%;
 }
+
+
+.header__container {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(255,255,255,0.95);
+	border-bottom: 1px solid rgba(230,240,250,0.5);
+}
+
+
+	.header__pattern {
+		display: block;
+		height: 4px;
+		background: -webkit-repeating-linear-gradient(-45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+		background: repeating-linear-gradient(-45deg, #1970B7, #1970B7 40px, #BE222B 40px, #BE222B 80px);
+	}
+
+
+	.header__navigation {
+		padding: 3em;
+		//border: 1px solid red;
+	}
+
 
 h1 {
 	font: 200 3em/8em "Titillium Web";
@@ -52,20 +80,26 @@ h1 {
 
 
 	.landing__header {
-		border-bottom: 1px solid rgba(255,255,255,0.06125);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		index: 1000;
+		padding: 0 2em;
+		background: rgb(255,255,255);
+		border-bottom: 1px solid rgba(255,255,255,1);
 	}
 
 
 
 		.landing__nav {
-			max-width: 120em;
 			margin: 0 auto;
 		}
 
 
 			.landing__nav__logo {
-				height: 46px;
-				margin: 20px 0;
+				height: 31px;
+				margin: 6px 0;
 				display: inline-block;
 				float: left;
 			}
@@ -94,8 +128,9 @@ h1 {
 						font: 600 1.2em "Titillium Web";
 						color: rgb(177,190,210);
 						color: rgba(255,255,255,0.75);
+						color: rgb(60,70,90);
 						text-transform: uppercase;
-						padding: 3em;
+						padding: 1em 3em;
 						-webkit-transition: background 0.2s;
 						text-decoration: none;
 
@@ -242,7 +277,7 @@ h1 {
 
 
 		.landing__title {
-			font: 400 2.4em "Titillium Web";
+			font: 400 4em "Montserrat";
 			text-transform: uppercase;
 			color: rgb(40,48,60);
 			color: rgb(255,255,255);
@@ -250,7 +285,7 @@ h1 {
 			display: block;
 			margin: 2em auto;
 			margin-bottom: 2em;
-			width: intrinsic;
+			max-width: 17em;
 			//border-bottom: 1px solid rgba(255,255,255,0.35);
 		}
 
@@ -276,11 +311,14 @@ h1 {
 			text-align: center;
 			color: rgb(179,40,53);
 			background: rgb(255,255,255);
-			border-radius: 2px;
-			font: 600 1.6em "Titillium Web";
+			border-radius: 2em;
+			font: 500 1.6em "Titillium Web";
 			padding: 0.75em 0.5em;
 			opacity: 1;
 			-webkit-transition: opacity 0.2s;
+			background: transparent;
+			color: rgb(255,255,255);
+			border: 1px solid rgb(255,255,255);
 
 			// &:hover {
 			// 	opacity: 1;
@@ -332,14 +370,23 @@ h1 {
 
 
 	.section {
-		padding: 6em 2em;
-		max-width: 120em;
-		margin: 0 auto;
+		z-index: 5;
+		position: relative;
+		// padding: 6em 2em;
+		// max-width: 120em;
+		// margin: 0 auto;
 		//border-bottom: 1px solid rgba(230,230,230,0.5);
 	}
 
 
-		.section__head {
+	.section__bg--graph {
+		background: url('../images/graphics/graphthree.svg') no-repeat center top;
+		//box-shadow: 0px 1px 2px rgba(60,60,60,0.25);
+		z-index: 10;
+	}
+
+
+		.section__head--old {
 			font: 200 3em "Titillium Web";
 			color: rgb(40,40,40);
 			text-align: center;
@@ -353,6 +400,12 @@ h1 {
 			color: rgba(40,40,40,0.7);
 			max-width: 30em;
 			margin: 0 auto;
+		}
+
+
+		.section__description--split {
+			max-width: 100%;
+			width: 100%;
 		}
 
 
@@ -373,10 +426,15 @@ h1 {
 		}
 
 
+		.section__description--white {
+			color: rgb(255,255,255);
+		}
+
+
 		.sponsors {
-			max-width: 80em;
-			margin: 0 auto;
-			margin-top: 2em;
+			// max-width: 80em;
+			// margin: 0 auto;
+			// margin-top: 2em;
 		}
 
 
@@ -502,12 +560,22 @@ h1 {
 					}
 
 
+	.sponsors {
+		padding: 8em 2em;
+		background: rgba(25,112,200,0.125);
+	}
+
 	.contact {
 		padding: 8em 2em;
-		background: radial-gradient(circle farthest-corner at right bottom, rgb(190,34,43) 0, rgb(135,60,90) 60%,rgb(25,112,183) 100%);
-		background: rgb(25,112,183);
-		//background: radial-gradient(circle farthest-corner at right bottom, rgb(190,34,43) 0, rgb(135,60,90) 60%,rgb(104,29,59) 100%);
+		background: rgba(25,112,200,0.125);
 	}
+
+
+
+
+
+//		background: radial-gradient(circle farthest-corner at right bottom, rgb(190,34,43) 0, rgb(135,60,90) 60%,rgb(25,112,183) 100%);
+		//background: radial-gradient(circle farthest-corner at right bottom, rgb(190,34,43) 0, rgb(135,60,90) 60%,rgb(104,29,59) 100%);
 
 
 		.contact__container {
@@ -527,7 +595,7 @@ h1 {
 				font: 200 3em "Titillium Web";
 				text-align: center;
 				margin: 1em 0;
-				color: rgb(255,255,255);
+				color: rgb(60,70,90);
 			}
 
 
@@ -573,7 +641,7 @@ h1 {
 				.contact__card__head {
 					font: 100 3em "Titillium Web";
 					text-align: center;
-					color: rgb(255,255,255);
+					color: rgb(140,150,160);
 					margin-bottom: 0.125em;
 				}
 
@@ -581,9 +649,952 @@ h1 {
 				.contact__card__message {
 					font: 300 1.8em/1.2em "Titillium Web";
 					text-align: center;
-					color: rgba(255,255,255,0.75);
+					color: rgba(60,70,90,0.75);
 					max-width: 22.5em;
 					margin: 0 auto;
 				}
+
+.section__bounds {
+	max-width: 120em;
+	margin: 0 auto;
+}
+
+
+	.section__head {
+		margin-bottom: 2em;
+	}
+
+
+		.section__title {
+			font: 400 2em "Montserrat";
+			color: rgba(140,144,160,0.9);
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
+
+
+			.section__description {
+				font: 300 1.8em/1.4em "Titillium Web";
+				text-align: center;
+				color: rgba(140,144,160,0.75);
+			}
+
+
+			.section__description--white {
+				color: rgb(255,255,255);
+			}
+
+
+	.section__content {
+	}
+
+
+	.section__content--split {
+		display: table-cell;
+		width: 55%;
+		height: 20em;
+		border-left: 1px solid rgba(140,144,160,0.125);
+	}
+
+
+.page__container {
+}
+
+
+	.section {
+		width: 100%;
+		margin: 0 auto;
+
+	}
+
+
+	.section--pad {
+		padding: 4em 0;
+	}
+
+
+	.section__landing {
+		border-bottom: 1px solid rgba(140,144,160,0.125);
+		background: rgb(245,245,250);
+	}
+
+
+	.section__border__double {
+		//border-top: 1px solid rgba(140,144,160,0.125);
+		border-bottom: 1px solid rgba(140,144,160,0.125);
+	}
+
+
+	.section__sponsorship__contribution {
+		//background: rgb(60,70,90);
+		-webkit-transition: background 0.2s;
+	}
+
+
+		.section__container {
+			max-width: 120em;
+			margin: 0 auto;
+			padding: 6em 0;
+		}
+
+
+		.section__container--split {
+			padding: 0;
+		}
+
+
+		.section__split {
+			width: 100%;
+			display: table;
+		}
+
+
+			.section__header {
+				margin-bottom: 4em;
+			}
+
+
+			.section__header--split {
+				width: 45%;
+				display: table-cell;
+				vertical-align: middle;
+				padding: 2em;
+			}
+
+
+				.section__title--landing {
+					font: 400 3em "Montserrat";
+					color: rgba(60,70,80,0.75);
+				}
+
+
+				.section__description--landing {
+					font: 300 2em/1.4em "Titillium Web";
+					color: rgba(140,144,160,0.85);
+				}
+
+
+				.section__title--split {
+					text-align: left;
+				}
+
+
+				.section__description--split {
+					text-align: left;
+					width: 100%;
+				}
+
+
+	.spons__grid {
+		margin: 0 auto;
+		margin-top: 4em;
+		margin-bottom: 4em;
+		// original width is 0.8*1200 = 960px
+		width: 100%;
+	}
+
+
+	.spons__grid__row {
+		width: 100%;
+		// flexbox
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+				flex-direction: row;
+		-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+		-webkit-align-items: center;
+				align-items: center;
+	}
+
+
+		.spons__grid__box {
+			display: block;
+			// flexbox
+			-webkit-flex: 1 0 auto;
+			flex: 1 0 auto;
+			// default margins
+			margin: 0;
+			// shadow?
+			box-shadow: 0px 1px 0px rgba(130,140,160,0.75);
+		}
+
+
+		.spons__grid__box--container {
+			height: 30.2em;
+			display: block;
+			// flexbox
+			-webkit-flex: 1 0 auto;
+			flex: 1 0 auto;
+			// default margins
+
+
+			.spons__grid__row:nth-child(1) {
+				margin-bottom: 1em;
+			}
+
+
+		}
+
+
+		.spons__grid__box--gold {
+			height: 30.2em;
+			background: rgb(230,234,238);
+			margin-right: 1em;
+		}
+
+
+		.spons__grid__box--silver {
+			height: 14.6em;
+			background: rgb(230,234,238);
+			margin: 0;
+
+			&:nth-child(1) {
+				margin-right: 1em;
+			}
+
+		}
+
+
+.btn {
+	font: 300 1.4em "Montserrat";
+	display: block;
+	margin: 0 auto;
+	padding: 1em 1.5em;
+	text-align: center;
+	width: intrinsic;
+	border-radius: 2em;
+	cursor: pointer;
+	-webkit-transition: background 0.2s, color 0.2s;
+	background: transparent;
+}
+
+
+.btn--dark {
+	color: rgb(130,140,160);
+	border: 2px solid rgb(130,140,160);
+	cursor: pointer;
+
+	&:link {
+		color: rgb(130,140,160);
+		border: 2px solid rgb(130,140,160);
+	}
+
+	&:visited {
+		color: rgb(130,140,160);
+		border: 2px solid rgb(130,140,160);
+	}
+
+	&:hover {
+		cursor: pointer;
+		background: rgb(130,140,160);
+		color: rgb(255,255,255);	
+	}
+
+}
+
+.btn--white {
+	color: rgb(255,255,255);
+	border: 2px solid rgb(255,255,255);
+	cursor: pointer;
+
+	&:link {
+		color: rgb(255,255,255);
+		border: 2px solid rgb(255,255,255);
+	}
+
+	&:visited {
+		color: rgb(255,255,255);
+		border: 2px solid rgb(255,255,255);
+	}
+
+	&:hover {
+		cursor: pointer;
+		background: rgb(255,255,255);
+		color: rgb(60,70,90);	
+	}
+
+}
+
+
+.bgc--manulife {
+	background: #00763A url('../images/logos/manulife.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(#00763A, 20);
+}
+
+
+.bgc--rbc {
+	background: #0C5FA8 url('../images/logos/rbc.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(#0C5FA8, 20);
+}
+
+
+.bgc--accenture {
+	background: #A0112D url('../images/logos/accenture.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(#A0112D, 20);
+}
+
+
+.bgc--ibm {
+	background: rgb(37,114,190) url('../images/logos/ibm.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(rgb(37,114,190), 20);
+}
+
+
+.bgc--oracle {
+	background: rgb(224,32,34) url('../images/logos/oracle.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(rgb(224,32,34), 20);
+}
+
+
+.bgc--wealthsimple {
+	background: rgb(249,167,44) url('../images/logos/wealthsimple.png') no-repeat center center;
+	background-size: 100%;
+	box-shadow: 0px 1px 0px darken(rgb(249,167,44), 20);
+}
+
+
+// delegate diversity boxes
+.delegate__category {
+	margin: 0 2.5%;
+	width: 20%;
+	height: 16em;
+	border-radius: 4px;
+	border: 1px solid rgba(200,200,200,0.125);
+	background: rgb(240,245,250);
+	float: left;
+}
+
+
+
+// sponsorship contributions widget
+.contribution {
+	margin: 0 auto;
+	margin: 2em auto 6em auto;
+	max-width: 60em;
+	border-radius: 4px;
+	padding: 1em 2em 3em 2em;
+	-webkit-transition: background 0.2s, color 0.2s;
+}
+
+
+.group {
+	-webkit-transition: background 0.2s, color 0.2s;
+}
+
+
+.group--base {
+	background: rgb(60,70,90);
+
+	// .section__sponsorship__contribution {
+	// 	background: rgb(60,70,90);
+	// }
+
+	.contribution {
+		background: #232D41;
+	}
+
+	.section__sponsorship__contribution .section__description {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__value {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__sign {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__range {
+
+		// track
+		&::-webkit-slider-runnable-track {
+			background: rgba(255,255,255,0.25);
+		}
+
+		&::-webkit-slider-thumb {
+			background: rgb(255,255,255);
+		}
+
+	}
+
+	.btn--contribution {
+		color: rgb(255,255,255);
+		border: 2px solid rgb(255,255,255);
+		cursor: pointer;
+
+		&:link {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+		}
+
+		&:visited {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(255,255,255);
+			color: rgb(60,70,90);	
+		}
+
+	}
+
+}
+
+
+.group--bronze {
+	background: #cd7f32;
+
+	// .section__sponsorship__contribution {
+	// 	background: #CD7F32;
+	// }
+
+	.contribution {
+		background: #B46619;
+	}
+
+	.section__sponsorship__contribution .section__description {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__value {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__sign {
+		color: rgb(255,255,255);
+	}
+
+	.contribution__range {
+
+		// track
+		&::-webkit-slider-runnable-track {
+			background: rgba(255,255,255,0.25);
+		}
+
+		&::-webkit-slider-thumb {
+			background: rgb(255,255,255);
+		}
+
+	}
+
+	.btn--contribution {
+		color: rgb(255,255,255);
+		border: 2px solid rgb(255,255,255);
+		cursor: pointer;
+
+		&:link {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+		}
+
+		&:visited {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(255,255,255);
+			color: #cd7f32;	
+		}
+
+	}
+
+}
+
+.group--silver {
+	background: #C0C0C0;
+
+	// .section__sponsorship__contribution {
+	// 	background: #C0C0C0;
+	// }
+
+	.contribution {
+		background: #A7A7A7;
+	}
+
+	.section__sponsorship__contribution .section__description {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__value {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__sign {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__range {
+
+		// track
+		&::-webkit-slider-runnable-track {
+			background: rgba(255,255,255,0.25);
+		}
+
+		&::-webkit-slider-thumb {
+			background: rgb(30,40,60);
+		}
+
+	}
+
+	.btn--contribution {
+		color: rgb(30,40,60);
+		border: 2px solid rgb(30,40,60);
+		cursor: pointer;
+
+		&:link {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:visited {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(30,40,60);
+			color: #C0C0C0;	
+		}
+
+	}
+
+}
+
+.group--gold {
+	background: #FFD700;
+
+	// .section__sponsorship__contribution {
+	// 	background: #FFD700;
+	// }
+
+	.contribution {
+		background: #E6BE00;
+	}
+
+	.section__sponsorship__contribution .section__description {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__value {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__sign {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__range {
+
+		// track
+		&::-webkit-slider-runnable-track {
+			background: rgba(255,255,255,0.25);
+		}
+
+		&::-webkit-slider-thumb {
+			background: rgb(30,40,60);
+		}
+
+	}
+
+	.btn--contribution {
+		color: rgb(30,40,60);
+		border: 2px solid rgb(30,40,60);
+		cursor: pointer;
+
+		&:link {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:visited {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(30,40,60);
+			color: #FFD700;	
+		}
+
+	}
+
+}
+
+.group--platinum {
+	background: #E5E4E2;
+
+	// .section__sponsorship__contribution {
+	// 	background: #E5E4E2;
+	// }
+
+	.contribution {
+		background: #CCCBC9;
+	}
+
+	.section__sponsorship__contribution .section__description {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__value {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__sign {
+		color: rgb(30,40,60);
+	}
+
+	.contribution__range {
+
+		// track
+		&::-webkit-slider-runnable-track {
+			background: rgba(255,255,255,0.25);
+		}
+
+		&::-webkit-slider-thumb {
+			background: rgb(30,40,60);
+		}
+
+	}
+
+	.btn--contribution {
+		color: rgb(30,40,60);
+		border: 2px solid rgb(30,40,60);
+		cursor: pointer;
+
+		&:link {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:visited {
+			color: rgb(30,40,60);
+			border: 2px solid rgb(30,40,60);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(30,40,60);
+			color: #E5E4E2;	
+		}
+
+	}
+
+}
+
+
+	.contribution__value {
+		font: 100 4em "Titillium Web";
+		text-align: center;
+		margin: 0;
+		-webkit-transition: background 0.2s, color 0.2s;
+	}
+
+
+	.contribution__sign {
+		font: 300 1.2em "Montserrat";
+		text-align: center;
+		text-transform: uppercase;
+		-webkit-transition: background 0.2s, color 0.2s;
+	}
+
+
+	.contribution__range {
+		margin-top: 2em;
+		-webkit-appearance: none;
+		width: 100%;
+		background: transparent;
+		cursor: pointer;
+
+		// track
+		&::-webkit-slider-runnable-track {
+			width: 100%;
+			border-radius: 1.25em;
+			height: 0.5em;
+			-webkit-transition: background 0.2s, color 0.2s;
+		}
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			height: 3em;
+			width: 3em;
+			backgorund: red;
+			border-radius: 1.5em;
+			position: relative;
+			margin-top: -1.25em;
+			-webkit-transition: background 0.2s, color 0.2s;
+
+			&::after {
+				position: absolute;
+				border: 1px solid red;
+				height: 100%;
+				width: 100%;
+				left: 0;
+				top: 0;
+			}
+
+		}
+
+	}
+
+
+
+// by the numbers grid
+.numbers__grid__box {
+	float: left;
+}
+
+
+.numbers__grid__box--big {
+	height: 30em;
+	width: 30em;
+	padding: 2em;
+}
+
+
+.numbers__grid__box--small {
+	height: 15em;
+	width: 15em;
+}
+
+
+.numbers__grid__box--blue {
+	background: #1970B7;
+	color: #FFFFFF;
+}
+
+
+.numbers__grid__box--red {
+	background: #BE222B;
+}
+
+
+.numbers__grid__box--white {
+	background: #FFFFFF;
+}
+
+
+	.numbers__grid__num--big {
+		font: 100 8em "Titillium Web";
+	}
+
+
+// barchart set
+.barchart__set {
+	display: block;
+	position: relative;
+	padding: 1em;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+}
+
+
+	.barchart__set__visual {
+		background: #1970B7;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		z-index: -1;
+	}
+
+
+	.barchart__set__visual--100 {
+		width: 100%;
+	}
+
+
+	.barchart__set__visual--50 {
+		width: 50%;
+	}
+
+
+	.barchart__set__visual--35 {
+		width: 25%;
+	}
+
+
+	.barchart__set__visual--10 {
+		width: 10%;
+	}
+
+
+	.barchart__set__visual--5 {
+		width: 5%;
+	}
+
+
+	.barchart__set__number {
+		font: 300 2.2em/1.2em "Titillium Web";
+		color: rgb(255,255,255);
+	}
+
+
+	.barchart__set__category {
+		font: 400 1em "Montserrat";
+		color: rgb(255,255,255);
+		text-transform: uppercase;
+	}
+
+
+
+
+
+
+.fraction {
+	height: 10em;
+	padding-bottom: 20em;
+	padding-top: 0;
+}
+
+
+	.fraction__set {
+		display: inline-block;
+		width: 25%;
+		margin: 0;
+		float: left;
+
+		&:nth-of-type(2) {
+			padding-top: 4.772em;
+		}
+
+		&:nth-of-type(3) {
+			padding-top: 1.28em;
+		}
+
+		&:nth-of-type(4) {
+			padding-top: 3.294em;
+		}
+
+	}
+
+
+		.fraction__set__box {
+			width: 75%;
+			margin: 0 auto;
+			//border-radius: 2px;
+			background: rgb(245,245,245);
+			box-shadow: 0px 1px 0px rgba(60,60,60,0.125);
+			overflow: hidden;
+			border: 3px solid #2294F2;
+			border-radius: 4px;
+			background: #2294F2;
+			box-shadow: 0px 1px 0px #1D80D1;
+		}
+
+
+			.fraction__set__box__n {
+				font: 500 3em/1.2em "Titillium Web";
+				color: rgb(100,104,108);
+				width: 25%;
+				float: left;
+				padding: 0;
+				background: rgb(255,255,255);
+				text-align: center;
+			}
+
+
+			.fraction__set__box__i {
+				float: left;
+				width: 75%;
+			}
+
+
+				.fraction__set__box__p {
+					font: 400 1.2em/1.5em "Montserrat";
+					color: rgba(255,255,255,0.85);
+					padding: 0 0.5em;
+				}
+
+
+				.fraction__set__box__c {
+					font: 400 1.4em/1.2857em "Montserrat";
+					color: rgba(255,255,255,1);
+					text-transform: uppercase;
+					padding: 0 0.5em;
+				}
+
+
+
+// MAIN NAVIGATION
+// ---------------
+
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 500;
+}
+
+
+	.nav__logo {
+		display: block;
+		float: left;
+		padding: 2.5em;
+		background: url('../images/logo-link.svg') no-repeat;
+	}
+
+
+
+@import "_main--improved";
+
+
+@media (max-width: 1200px) {
+
+	.section__container {
+		max-width: 90em;
+		margin: 0 auto;
+		padding: 4em 0;
+	}
+
+	// grid
+	.spons__grid {
+		// original width is 0.85*960 = 816px
+		width: 85%;
+	}
+
+
+		.spons__grid__box {
+		}
+
+
+		.spons__grid__box--container {
+			height: 23.7em;
+
+
+		}
+
+
+		.spons__grid__box--gold {
+			height: 23.7em;
+		}
+
+
+		.spons__grid__box--silver {
+			height: 11.35em;
+
+		}
+
+}
 
 

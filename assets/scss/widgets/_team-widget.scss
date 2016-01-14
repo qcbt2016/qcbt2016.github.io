@@ -1,0 +1,69 @@
+.qcbt__widget__team {
+	padding-top: 2em;
+}
+
+
+	.qcbt__widget__team__row {
+		display: table;
+		margin: 0 auto;
+		width: intrinsic;
+		padding-bottom: 2em;
+	}
+
+
+		.qcbt__widget__team__member__container {
+			margin: 0 1.5em;
+			float: left;
+		}
+
+
+			.qcbt__widget__team__member__avatar__container {
+				display: block;
+				height: 8em;
+				width: 8em;
+				border-radius: 4em;
+				background: rgb(238,238,238);
+				margin-bottom: 0.75em;
+			}
+
+
+				.qcbt__widget__team__member__avatar {
+					display: block;
+					height: 8em;
+					width: 8em;
+					border-radius: 4em;
+					background: rgb(255,255,255);
+					border: 4px solid rgb(240,244,248);
+					overflow: hidden;
+					cursor: pointer;
+					-webkit-transition: border 0.2s;
+					   -moz-transition: border 0.2s;
+						-ms-transition: border 0.2s;
+						 -o-transition: border 0.2s;
+							transition: border 0.2s;
+
+					&:hover {
+						border-color: rgba(34,148,242,0.75);
+					}
+
+				}
+
+
+					.qcbt__widget__team__member__picture {
+						display: block;
+						width: 100%;
+					}
+
+
+			.qcbt__widget__team__member__name {
+				font: 400 1em "Montserrat";
+				text-transform: uppercase;
+				color: rgb(150,150,150);
+				text-align: center;
+			}
+
+
+	.qcbt__widget__team__filter {
+		border: 1px solid red;
+		margin-bottom: 3em;
+	}
