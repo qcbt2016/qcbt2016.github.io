@@ -1,0 +1,24 @@
+.qcbt__picture__grid {
+	max-width: 120em;
+	margin: 6em auto;
+}
+
+
+	.qcbt__picture__grid__row {
+	}
+
+
+		.qcbt__picture__grid__picture__container {
+			display: block;
+			height: 20em;
+			width: 20em;
+			float: left;
+			padding: 0.25em;
+		}
+
+
+			.qcbt__picture__grid__picture {
+				border-radius: 4px;
+				display: block;
+				width: 100%;
+			}

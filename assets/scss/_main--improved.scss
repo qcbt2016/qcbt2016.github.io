@@ -1,0 +1,638 @@
+.qcbt__page {
+	position: relative;
+	z-index: 100;
+}
+
+
+	.qcbt__section {
+		border-bottom: 1px solid rgba(230,233,236,0.5);
+	}
+
+
+	.qcbt__section--no-border {
+		border: 0;
+	}
+
+
+	.qcbt__section--landing {
+		padding: 8em 2em;
+	}
+
+
+	.qcbt__section--supporting {
+		padding: 6em 2em;
+	}
+
+
+	.qcbt__section--intermediary {
+		padding: 4em 2em;
+	}
+
+
+	.qcbt__section--custom {
+		padding: 0;
+	}
+
+
+	.qcbt__section--overflow {
+		overflow: hidden;
+	}
+
+
+		// .qcbt__section__bg__picture {
+		// 	border: 1px solid red;
+		// 	display: block;
+		// }
+
+
+			.qcbt__section__bounds {
+				max-width: 96em;
+				margin: 0 auto;
+			}
+
+
+				.qcbt__section__flex {
+					display: -webkit-flex;
+					display: flex;
+
+					// temporary
+				}
+
+
+					.qcbt__section__text {
+						width: 40%;
+						display: block;
+					}
+
+
+					.qcbt__section__text--landing {
+						width: 100%;
+					}
+
+
+					.qcbt__section__text--center {
+						width: 100%;
+					}
+
+
+						.qcbt__section__text__open {
+							font: 400 1.2em "Montserrat";
+							text-transform: uppercase;
+						}
+
+
+						.qcbt__section__text__open--landing {
+							text-align: center;
+							max-width: 50em;
+							margin: 0 auto;
+						}
+
+
+						.qcbt__section__text__open--center {
+							text-align: center;
+						}
+
+
+						.qcbt__section__text__open--light {
+							color: rgb(175,175,175);
+						}
+
+
+						.qcbt__section__text__open--dark {
+							color: rgb(200,200,200);
+						}
+
+
+						.qcbt__section__text__divider {
+							display: block;
+							height: 0.2em;
+							width: 3em;
+							background: #2294F2;
+							margin-top: 0.25em;
+						}
+
+
+						.qcbt__section__text__divider--center {
+							margin: 0.25em auto 0 auto;
+						}
+
+
+						.qcbt__section__text__title {
+							font: 300 2.8em/1em "Montserrat";
+							text-transform: uppercase;
+							margin: 1em 0 0.4em 0;
+						}
+
+
+						.qcbt__section__text__title--landing {
+							font-size: 3.6em;
+							margin: 0.4em 0;
+						}
+
+
+						.qcbt__section__text__title--small {
+							max-width: 18em;
+							margin: 0.4em auto 0.4em auto;
+						}
+
+
+						.qcbt__section__text__title--center {
+							text-align: center;
+						}
+
+
+						.qcbt__section--intermediary .qcbt__section__text__title {
+							margin: 0 0 0.4em 0;
+						}
+
+
+						.qcbt__section__text__title--light {
+							color: #2294F2;
+							color: rgb(73,75,78);
+						}
+
+
+						.qcbt__section__text__title--dark {
+							color: rgb(255,255,255);
+						}
+
+
+						.qcbt__section__text__blurb {
+							font: 300 1.6em/1.4em "Titillium Web";
+						}
+
+
+						.qcbt__section__text__blurb--landing {
+							font-size: 2em;
+							max-width: 32em;
+							margin: 0 auto;
+							text-align: center;
+						}
+
+
+						.qcbt__section__text__blurb--center {
+							max-width: 30em;
+							margin: 0 auto;
+							text-align: center;
+						}
+
+
+						.qcbt__section__text__blurb--light {
+							color: rgb(130,133,136);
+						}
+
+
+						.qcbt__section__text__blurb--dark {
+							color: rgb(240,243,246);
+						}
+
+
+					.qcbt__section__compliment {
+						width: 60%;
+						display: block;
+					}
+
+
+					.qcbt__section__compliment--center {
+						width: 100%;
+					}
+
+
+	.qcbt__button {
+		font: 300 1.4em "Montserrat";
+		display: block;
+		padding: 1em 1.5em;
+		text-align: center;
+		width: intrinsic;
+		border-radius: 2em;
+		cursor: pointer;
+		background: transparent;
+		text-decoration: none;
+		-webkit-transition: background 0.2s, color 0.2s;
+		   -moz-transition: background 0.2s, color 0.2s;
+			-ms-transition: background 0.2s, color 0.2s;
+			 -o-transition: background 0.2s, color 0.2s;
+				transition: background 0.2s, color 0.2s;
+	}
+
+
+	.qcbt__button--center {
+		margin: 0 auto;
+	}
+
+
+	.qcbt__button--top-margin {
+		margin-top: 2em;
+	}
+
+
+	.qcbt__button--navigation {
+		font-size: 1.2em;
+		padding: 0.75em 1.5em;
+	}
+
+
+	.qcbt__button--dark {
+		color: rgb(130,140,160);
+		border: 2px solid rgb(130,140,160);
+		cursor: pointer;
+		text-decoration: none;
+
+		&:link {
+			color: rgb(130,140,160);
+			border: 2px solid rgb(130,140,160);
+			text-decoration: none;
+		}
+
+		&:visited {
+			color: rgb(130,140,160);
+			border: 2px solid rgb(130,140,160);
+			text-decoration: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(130,140,160);
+			color: rgb(255,255,255);
+			text-decoration: none;	
+		}
+
+		&:active {
+			// 18% darker
+			background: rgb(84,94,114);
+			text-decoration: none;
+		}
+
+	}
+
+
+	.qcbt__button--white {
+		color: rgb(255,255,255);
+		border: 2px solid rgb(255,255,255);
+		cursor: pointer;
+		text-decoration: none;
+
+		&:link {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+			text-decoration: none;
+		}
+
+		&:visited {
+			color: rgb(255,255,255);
+			border: 2px solid rgb(255,255,255);
+			text-decoration: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: rgb(255,255,255);
+			color: #2294F2;
+			text-decoration: none;
+		}
+
+		&:active {
+			// 18% darker
+			background: #D1D1D1;
+			text-decoration: none;
+		}
+
+	}
+
+
+	.qcbt__button--blue {
+		color: #2294F2;
+		border: 2px solid #2294F2;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:link {
+			color: #2294F2;
+			border: 2px solid #2294F2;
+			text-decoration: none;
+		}
+
+		&:visited {
+			color: #2294F2;
+			border: 2px solid #2294F2;
+			text-decoration: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: #2294F2;
+			color: rgb(255,255,255);
+			text-decoration: none;	
+		}
+
+		&:active {
+			// 18% darker
+			background: #0066C4;
+			text-decoration: none;
+		}
+
+	}
+
+
+	.qcbt__button--orange {
+		color: #e67e22;
+		border: 2px solid #e67e22;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:link {
+			color: #e67e22;
+			border: 2px solid #e67e22;
+			text-decoration: none;
+		}
+
+		&:visited {
+			color: #e67e22;
+			border: 2px solid #e67e22;
+			text-decoration: none;
+		}
+
+		&:hover {
+			cursor: pointer;
+			background: #e67e22;
+			color: rgb(255,255,255);
+			text-decoration: none;	
+		}
+
+		&:active {
+			// 18% darker
+			background: #B85000;
+			text-decoration: none;
+		}
+
+	}
+
+
+// BACKGROUNDS
+// -----------
+
+	.qcbt__bg--dark {
+		background: rgb(84,94,114);
+		background: rgb(84,94,114) url('../images/bg/numbers--three.svg') no-repeat center center;
+		border-bottom: 1px solid rgba(64,74,84,0.5);
+	}
+
+
+	.qcbt__bg--blue {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2294f2+0,1970b7+100 */
+background: #2294f2; /* Old browsers */
+background: -moz-linear-gradient(-25deg,  #2294f2 0%, #1970b7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-25deg,  #2294f2 0%,#1970b7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(155deg,  #2294f2 0%,#1970b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2294f2', endColorstr='#1970b7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	}
+
+
+
+	.b {
+	}
+
+
+
+
+	.qcbt__bg--off-white {
+		background: rgb(240,244,248);
+		border-bottom: 1px solid rgba(210,213,216,0.5);
+	}
+
+
+	.qcbt__bg--road-sign {
+		background: rgb(240,244,248) url('../images/graphics/roadsign.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--mission {
+		background: rgb(240,244,248) url('../images/graphics/mission.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--learning {
+		background: url('../images/graphics/learning.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--networking {
+		background: url('../images/graphics/networking.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--recruitment {
+		background: url('../images/graphics/recruitment.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--shape {
+		background: url('../images/graphics/shape.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--connect {
+		background: rgb(240,244,248) url('../images/graphics/connect.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--create {
+		background: url('../images/graphics/create.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--educate {
+		background: rgb(240,244,248) url('../images/graphics/educate.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--inspire {
+		background: rgb(240,244,248) url('../images/graphics/inspire.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--establish {
+		background: rgb(240,244,248) url('../images/graphics/establish.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--share {
+		background: url('../images/graphics/share.png') no-repeat center center;
+	}
+
+
+	.qcbt__bg--clouds {
+		background: url('../images/bg/clouds.png') repeat-x center bottom;
+	}
+
+
+
+	// NAVIGATION
+	// ----------
+
+	.qcbt__navigation {
+		position: fixed;
+		width: 100%;
+		z-index: 200;
+		background: transparent;
+		border: 0;
+		-webkit-transition: background 0.2s, border 0.2s;
+		   -moz-transition: background 0.2s, border 0.2s;
+			-ms-transition: background 0.2s, border 0.2s;
+			 -o-transition: background 0.2s, border 0.2s;
+				transition: background 0.2s, border 0.2s;
+	}
+
+
+	.qcbt__navigation--visible {
+		background: rgba(255,255,255,0.975);
+		border-bottom: 1px solid rgba(240,240,240,0.85);
+	}
+
+
+		.qcbt__navigation__logo {
+			float: left;
+			display: inline-block;
+			padding: 1.5em;
+		}
+
+
+			.qcbt__navigation__picture {
+				display: block;
+				height: 3.7em;
+			}
+
+
+		.qcbt__navigation__action {
+			float: right;
+			display: inline-block;
+			padding: 1.5em;
+		}
+
+
+		.qcbt__navigation__links__container {
+			//border: 1px solid red;
+			float: right;
+			opacity: 0;
+			border-right: 1px solid rgba(230,233,236,0.75);
+			-webkit-transition: opacity 0.2s;
+			   -moz-transition: opacity 0.2s;
+				-ms-transition: opacity 0.2s;
+				 -o-transition: opacity 0.2s;
+					transition: opacity 0.2s;
+		}
+
+
+		.qcbt__navigation__links__container--visible {
+			opacity: 1;
+		}
+
+
+			.qcbt__navigation__links {
+			}
+
+
+				.qcbt__navigation__link__container {
+					//border: 1px solid green;
+					float: left;
+
+				}
+
+
+					.qcbt__navigation__link {
+						//border: 1px solid black;
+						display: block;
+						padding: 1.85em 2.5em;
+					}
+
+
+						.qcbt__navigation__link__icon {
+							opacity: 1;
+							display: inline-block;
+							height: 3em;
+							width: 3em;
+							border-radius: 2em;
+							float: left;
+							margin-right: 1em;
+							border: 2px solid rgb(175,175,175);
+							overflow: hidden;
+						}
+
+
+						.qcbt__navigation__link__icon--sponsorship--shade {
+							background: url('../images/nav/straight--shade.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--speakers--shade {
+							background: url('../images/nav/straight-side--shade.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--team--shade {
+							background: url('../images/nav/slant-left--shade.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--delegates--shade {
+							background: url('../images/nav/slant-right--shade.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--sponsorship--blue {
+							background: url('../images/nav/straight--blue.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--speakers--blue {
+							background: url('../images/nav/straight-side--blue.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--team--blue {
+							background: url('../images/nav/slant-left--blue.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--delegates--blue {
+							background: url('../images/nav/slant-right--blue.png') center center;
+							background-size: 100%;
+						}
+
+
+						.qcbt__navigation__link__icon--active {
+							border: 2px solid #2294F2;
+						}
+
+
+						.qcbt__navigation__link__text {
+							float: left;
+							font: 400 1.2em/2.5em "Montserrat";
+							text-transform: uppercase;
+							color: rgb(175,175,175);
+						}
+
+
+						.qcbt__navigation__link__text--active {
+							color: #2294F2;
+						}
+
+
+@import "widgets/_team-widget";
+@import "widgets/_number-widget";
+@import "widgets/_contribution-widget";
+@import "widgets/_picture-grid-widget";
+@import "widgets/_card-widget";
+@import "widgets/_small-logo-widget";
+@import "widgets/_speaker-widget";
+@import "widgets/_member-card-widget";
+
+

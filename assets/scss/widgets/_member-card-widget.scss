@@ -1,0 +1,255 @@
+.qcbt__member__card {
+	height: 50em;
+	width: 36em;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -18em;
+	margin-top: -25em;
+	z-index: 750;
+	border-radius: 4px;
+	background: rgb(255,255,255);
+	overflow: hidden;
+	-webkit-transform: translateY(-75em);
+	   -moz-transform: translateY(-75em);
+		 -o-transform: translateY(-75em);
+			transform: translateY(-75em);
+}
+
+
+	.qcbt__member__card__frame {
+		//border: 1px solid red;
+		height: 100%;
+		position: relative;
+		overflow-y: scroll;
+		border-radius: 4px;
+		overflow-x: hidden;
+	}
+
+
+		.qcbt__member__card__buttons {
+			//border: 1px solid blue;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			border-top: 1px solid rgba(175,175,175,0.25);
+			overflow: hidden;
+			background: rgb(255,255,255);
+			border-radius: 0 0 4px 4px;
+		}
+
+
+			.qcbt__member__card__linkedin {
+				display: block;
+				float: left;
+				border-right: 1px solid rgba(175,175,175,0.25);
+				text-align: center;
+				text-transform: uppercase;
+				font: 400 1.2em "Montserrat";
+				color: rgb(38,136,187);
+				width: 50%;
+				padding: 1em;
+				border-radius: 0 0 0 4px;
+				-webkit-transition: background 0.2s, color 0.2s;
+				   -moz-transition: background 0.2s, color 0.2s;
+					 -o-transition: background 0.2s, color 0.2s;
+						transition: background 0.2s, color 0.2s;
+
+				&:link {
+					color: rgb(38,136,187);
+					text-decoration: none;
+				}
+
+				&:visited {
+					color: rgb(38,136,187);
+					text-decoration: none;
+				}
+
+				&:hover {
+					cursor: pointer;
+					background: rgb(38,136,187);
+					color: rgb(255,255,255);
+					text-decoration: none;	
+				}
+
+				&:active {
+					// 18% darker
+					background: #005A8D;
+					text-decoration: none;
+				}
+
+			}
+
+
+			.qcbt__member__card__cancel {
+				display: block;
+				float: left;
+				text-align: center;
+				text-transform: uppercase;
+				font: 400 1.2em "Montserrat";
+				color: #e74c3c;
+				width: 50%;
+				padding: 1em;
+				border-radius: 0 0 4px 0;
+				-webkit-transition: background 0.2s, color 0.2s;
+				   -moz-transition: background 0.2s, color 0.2s;
+					 -o-transition: background 0.2s, color 0.2s;
+						transition: background 0.2s, color 0.2s;
+
+				&:link {
+					color: #e74c3c;
+					text-decoration: none;
+				}
+
+				&:visited {
+					color: #e74c3c;
+					text-decoration: none;
+				}
+
+				&:hover {
+					cursor: pointer;
+					background: #e74c3c;
+					color: rgb(255,255,255);
+					text-decoration: none;	
+				}
+
+				&:active {
+					// 18% darker
+					background: #B91E0E;
+					text-decoration: none;
+				}
+			}
+
+
+		.qcbt__member__card__profile {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 2em;
+			border-bottom: 1px solid rgba(175,175,175,0.25);
+			background: rgb(255,255,255);
+			border-radius: 4px 4px 0 0;
+			overflow: hidden;
+		}
+
+
+			.qcbt__member__card__image__container {
+				border-radius: 4em;
+				height: 8em;
+				width: 8em;
+				margin: 0 auto;
+				border: 2px solid rgb(240,244,248);
+				overflow: hidden;
+				margin-bottom: 2em;
+			}
+
+
+				.qcbt__member__card__image {
+					display: block;
+					width: 100%;
+				}
+
+
+			.qcbt__member__card__name {
+				font: 400 2em "Montserrat";
+				text-transform: uppercase;
+				text-align: center;
+				color: rgb(30,40,60);
+			}
+
+
+			.qcbt__member__card__position {
+				font: 400 1.2em "Montserrat";
+				text-transform: uppercase;
+				text-align: center;
+				color: rgb(175,175,175);
+			}
+
+
+		.qcbt__member__card__description {
+			margin-top: 11.25em;
+			margin-bottom: 2.5em;
+			padding: 1.25em;
+			font: 300 1.6em/1.4em "Titillium Web";
+			color: rgb(110,110,110);
+			text-align: center;
+		}
+
+
+.qcbt__member__card--in {
+	-webkit-transform: translateY(0);
+	   -moz-transform: translateY(0);
+		 -o-transform: translateY(0);
+			transform: translateY(0);
+	-webkit-animation: memberCardInWebkit 0.3s ease;
+	   -moz-animation: memberCardInMoz 0.3s ease;
+		 -o-animation: memberCardInO 0.3s ease;
+			animation: memberCardIn 0.3s ease;
+}
+
+
+.qcbt__member__card--out {
+	-webkit-transform: translateY(75em);
+	   -moz-transform: translateY(75em);
+		 -o-transform: translateY(75em);
+			transform: translateY(75em);
+	-webkit-animation: memberCardOutWebkit 0.3s ease;
+	   -moz-animation: memberCardOutMoz 0.3s ease;
+		 -o-animation: memberCardOutO 0.3s ease;
+			animation: memberCardOut 0.3s ease;
+}
+
+
+// WEBKIT
+// ------
+
+@-webkit-keyframes memberCardInWebkit {
+	0% {   -webkit-transform: rotate(0deg) translateY(-75em); }
+	100% { -webkit-transform: rotate(0deg) translateY(0); }
+}
+
+@-webkit-keyframes memberCardOutWebkit {
+	0% {   -webkit-transform: rotate(0deg) translateY(0); }
+	100% { -webkit-transform: rotate(0deg) translateY(75em); }
+}
+
+// MOZ
+// ---
+
+@-moz-keyframes memberCardInMoz {
+	0% {   -moz-transform: rotate(0deg) translateY(-75em); }
+	100% { -moz-transform: rotate(0deg) translateY(0); }
+}
+
+@-webkit-keyframes memberCardOutMoz {
+	0% {   -moz-transform: rotate(0deg) translateY(0); }
+	100% { -moz-transform: rotate(0deg) translateY(75em); }
+}
+
+// O
+// -
+
+@-o-keyframes memberCardInO {
+	0% {   -o-transform: rotate(0deg) translateY(-75em); }
+	100% { -o-transform: rotate(0deg) translateY(0); }
+}
+
+@-webkit-keyframes memberCardOutO {
+	0% {   -o-transform: rotate(0deg) translateY(0); }
+	100% { -o-transform: rotate(0deg) translateY(75em); }
+}
+
+// KEYFRAMES
+// ---------
+
+@keyframes memberCardIn {
+	0% {   transform: rotate(0deg) translateY(-75em); }
+	100% { transform: rotate(0deg) translateY(0); }
+}
+
+@-webkit-keyframes memberCardOut {
+	0% {   transform: rotate(0deg) translateY(0); }
+	100% { transform: rotate(0deg) translateY(75em); }
+}

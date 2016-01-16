@@ -1,0 +1,255 @@
+.qcbt__widget__card__landing {
+	margin: 4em auto;
+	width: 36em;
+	height: 18em;
+	border-radius: 4px;
+	position: relative;
+	background: url('../images/graphics/landing.png') no-repeat;
+}
+
+
+	.qcbt__widget__card__card {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 4px;
+		background: rgba(255,255,255,1);
+		overflow: hidden;
+		-webkit-transform: translateY(-40em);
+		   -moz-transform: translateY(-40em);
+			 -o-transform: translateY(-40em);
+				transform: translateY(-40em);
+	}
+
+
+		.qcbt__widget__card__card__header {
+			border-bottom: 1px solid rgba(220,224,228,0.5);
+			font: 400 1.2em "Montserrat";
+			text-align: center;
+			text-transform: uppercase;
+			color: rgb(175,175,175);
+			padding: 1em;
+		}
+
+
+			.qcbt__widget__card__card__table {
+				display: table-cell;
+				height: 14em;
+				width: 36em;
+				vertical-align: middle;
+			}
+
+
+				.qcbt__widget__card__card__name {
+					font: 400 4em "Montserrat";
+					color: rgb(110,114,118);
+					text-align: center;
+					text-transform: uppercase;
+				}
+
+
+	.qcbt__widget__card__card--straight--in {
+		-webkit-transform: rotate(0deg) translateY(0);
+		   -moz-transform: rotate(0deg) translateY(0);
+			 -o-transform: rotate(0deg) translateY(0);
+				transform: rotate(0deg) translateY(0);
+		-webkit-animation: cardInStraightWebkit 0.4s ease;
+		   -moz-animation: cardInStraightMoz 0.4s ease;
+			 -o-animation: cardInStraightO 0.4s ease;
+				animation: cardInStraight 0.4s ease;
+	}
+
+
+	.qcbt__widget__card__card--slant--right--in {
+		-webkit-transform: rotate(-4deg) translateY(0);
+		   -moz-transform: rotate(-4deg) translateY(0);
+			 -o-transform: rotate(-4deg) translateY(0);
+				transform: rotate(-4deg) translateY(0);
+		-webkit-animation: cardInSlantRightWebkit 0.4s ease;
+		   -moz-animation: cardInSlantRightMoz 0.4s ease;
+			 -o-animation: cardInSlantRightO 0.4s ease;
+				animation: cardInSlantRight 0.4s ease;
+	}
+
+
+	.qcbt__widget__card__card--slant--left--in {
+		-webkit-transform: rotate(4deg) translateY(0);
+		   -moz-transform: rotate(4deg) translateY(0);
+			 -o-transform: rotate(4deg) translateY(0);
+				transform: rotate(4deg) translateY(0);
+		-webkit-animation: cardInSlantLeftWebkit 0.4s ease;
+		   -moz-animation: cardInSlantLeftMoz 0.4s ease;
+			 -o-animation: cardInSlantLeftO 0.4s ease;
+				animation: cardInSlantLeft 0.4s ease;
+	}
+
+
+	.qcbt__widget__card__card--straight--out {
+		-webkit-transform: rotate(0deg) translateY(75em);
+		   -moz-transform: rotate(0deg) translateY(75em);
+			 -o-transform: rotate(0deg) translateY(75em);
+				transform: rotate(0deg) translateY(75em);
+		-webkit-animation: cardOutStraightWebkit 0.4s ease-in;
+		   -moz-animation: cardOutStraightMoz 0.4s ease-in;
+			 -o-animation: cardOutStraightO 0.4s ease-in;
+				animation: cardOutStraight 0.4s ease-in;
+	}
+
+
+	.qcbt__widget__card__card--slant--right--out {
+		-webkit-transform: rotate(-4deg) translateY(75em);
+		   -moz-transform: rotate(-4deg) translateY(75em);
+			 -o-transform: rotate(-4deg) translateY(75em);
+				transform: rotate(-4deg) translateY(75em);
+		-webkit-animation: cardOutSlantRightWebkit 0.4s ease-in;
+		   -moz-animation: cardOutSlantRightMoz 0.4s ease-in;
+			 -o-animation: cardOutSlantRightO 0.4s ease-in;
+				animation: cardOutSlantRight 0.4s ease-in;
+	}
+
+
+	.qcbt__widget__card__card--slant--left--out {
+		-webkit-transform: rotate(4deg) translateY(75em);
+		   -moz-transform: rotate(4deg) translateY(75em);
+			 -o-transform: rotate(4deg) translateY(75em);
+				transform: rotate(4deg) translateY(75em);
+		-webkit-animation: cardOutSlantLeftWebkit 0.4s ease-in;
+		   -moz-animation: cardOutSlantLeftMoz 0.4s ease-in;
+			 -o-animation: cardOutSlantLeftO 0.4s ease-in;
+				animation: cardOutSlantLeft 0.4s ease-in;
+	}
+
+
+// WEBKIT
+// ------
+
+@-webkit-keyframes cardInStraightWebkit {
+	0% {   -webkit-transform: rotate(0deg) translateY(-75em); }
+	100% { -webkit-transform: rotate(0deg) translateY(0); }
+}
+
+@-webkit-keyframes cardInSlantRightWebkit {
+	0% {   -webkit-transform: rotate(-4deg) translateY(-75em); }
+	100% { -webkit-transform: rotate(-4deg) translateY(0); }
+}
+
+@-webkit-keyframes cardInSlantLeftWebkit {
+	0% {   -webkit-transform: rotate(4deg) translateY(-75em); }
+	100% { -webkit-transform: rotate(4deg) translateY(0); }
+}
+
+@-webkit-keyframes cardOutStraightWebkit {
+	0% {   -webkit-transform: rotate(0deg) translateY(0); }
+	100% { -webkit-transform: rotate(0deg) translateY(75em); }
+}
+
+@-webkit-keyframes cardOutSlantRightWebkit {
+	0% {   -webkit-transform: rotate(-4deg) translateY(0); }
+	100% { -webkit-transform: rotate(-4deg) translateY(75em); }
+}
+
+@-webkit-keyframes cardOutSlantLeftWebkit {
+	0% {   -webkit-transform: rotate(4deg) translateY(0); }
+	100% { -webkit-transform: rotate(4deg) translateY(75em); }
+}
+
+// MOZ
+// ---
+
+@-moz-keyframes cardInStraightMoz {
+	0% {   -moz-transform: rotate(0deg) translateY(-75em); }
+	100% { -moz-transform: rotate(0deg) translateY(0); }
+}
+
+@-moz-keyframes cardInSlantRightMoz {
+	0% {   -moz-transform: rotate(-4deg) translateY(-75em); }
+	100% { -moz-transform: rotate(-4deg) translateY(0); }
+}
+
+@-moz-keyframes cardInSlantLeftMoz {
+	0% {   -moz-transform: rotate(4deg) translateY(-75em); }
+	100% { -moz-transform: rotate(4deg) translateY(0); }
+}
+
+@-moz-keyframes cardOutStraightMoz {
+	0% {   -moz-transform: rotate(0deg) translateY(0); }
+	100% { -moz-transform: rotate(0deg) translateY(75em); }
+}
+
+@-moz-keyframes cardOutSlantRightMoz {
+	0% {   -moz-transform: rotate(-4deg) translateY(0); }
+	100% { -moz-transform: rotate(-4deg) translateY(75em); }
+}
+
+@-moz-keyframes cardOutSlantLeftMoz {
+	0% {   -moz-transform: rotate(4deg) translateY(0); }
+	100% { -moz-transform: rotate(4deg) translateY(75em); }
+}
+
+// O
+// -
+
+@-o-keyframes cardInStraightO {
+	0% {   -o-transform: rotate(0deg) translateY(-75em); }
+	100% { -o-transform: rotate(0deg) translateY(0); }
+}
+
+@-o-keyframes cardInSlantRightO {
+	0% {   -o-transform: rotate(-4deg) translateY(-75em); }
+	100% { -o-transform: rotate(-4deg) translateY(0); }
+}
+
+@-o-keyframes cardInSlantLeftO {
+	0% {   -o-transform: rotate(4deg) translateY(-75em); }
+	100% { -o-transform: rotate(4deg) translateY(0); }
+}
+
+@-o-keyframes cardOutStraightO {
+	0% {   -o-transform: rotate(0deg) translateY(0); }
+	100% { -o-transform: rotate(0deg) translateY(75em); }
+}
+
+@-o-keyframes cardOutSlantRightO {
+	0% {   -o-transform: rotate(-4deg) translateY(0); }
+	100% { -o-transform: rotate(-4deg) translateY(75em); }
+}
+
+@-o-keyframes cardOutSlantLeftO {
+	0% {   -o-transform: rotate(4deg) translateY(0); }
+	100% { -o-transform: rotate(4deg) translateY(75em); }
+}
+
+// KEYFRAMES
+// ---------
+
+@keyframes cardInStraight {
+	0% {   transform: rotate(0deg) translateY(-75em); }
+	100% { transform: rotate(0deg) translateY(0); }
+}
+
+@keyframes cardInSlantRight {
+	0% {   transform: rotate(-4deg) translateY(-75em); }
+	100% { transform: rotate(-4deg) translateY(0); }
+}
+
+@keyframes cardInSlantLeft {
+	0% {   transform: rotate(4deg) translateY(-75em); }
+	100% { transform: rotate(4deg) translateY(0); }
+}
+
+@keyframes cardOutStraight {
+	0% {   transform: rotate(0deg) translateY(0); }
+	100% { transform: rotate(0deg) translateY(75em); }
+}
+
+@keyframes cardOutSlantRight {
+	0% {   transform: rotate(-4deg) translateY(0); }
+	100% { transform: rotate(-4deg) translateY(75em); }
+}
+
+@keyframes cardOutSlantLeft {
+	0% {   transform: rotate(4deg) translateY(0); }
+	100% { transform: rotate(4deg) translateY(75em); }
+}
