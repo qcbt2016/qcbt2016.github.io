@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,200,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -86,492 +86,6 @@ body {
   padding: 0;
   font-size: 62.5%; }
 
-.header__container {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid rgba(230, 240, 250, 0.5); }
-
-.header__pattern {
-  display: block;
-  height: 4px;
-  background: -webkit-repeating-linear-gradient(-45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
-  background: repeating-linear-gradient(-45deg, #1970b7, #1970b7 40px, #be222b 40px, #be222b 80px); }
-
-.header__navigation {
-  padding: 3em; }
-
-h1 {
-  font: 200 3em/8em "Titillium Web";
-  color: #778096;
-  text-align: center; }
-
-.landing {
-  position: relative;
-  background: url("../images/bg.jpg") center center/1400px no-repeat;
-  background: radial-gradient(circle farthest-corner at right bottom, #be222b 0, #873c5a 60%, #1970b7 100%);
-  background: radial-gradient(circle farthest-corner at right bottom, #be222b 0, #873c5a 60%, #681d3b 100%); }
-
-.landing--toggle {
-  -webkit-animation: toggleBackground 2s infinite;
-  -webkit-transition: background 0.2s; }
-
-@-webkit-keyframes toggleBackground {
-  0% {
-    background: radial-gradient(circle farthest-corner at right bottom, #be222b 0, #873c5a 60%, #681d3b 100%); }
-
-  50% {
-    background: radial-gradient(circle farthest-corner at right bottom, #681d3b 0, #873c5a 60%, #1970b9 100%); } }
-
-.landing__header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  index: 1000;
-  padding: 0 2em;
-  background: white;
-  border-bottom: 1px solid white; }
-
-.landing__nav {
-  margin: 0 auto; }
-
-.landing__nav__logo {
-  height: 31px;
-  margin: 6px 0;
-  display: inline-block;
-  float: left; }
-
-.landing__links {
-  display: block;
-  list-style: none; }
-
-.landing__link {
-  display: block;
-  list-style: none;
-  float: right; }
-
-.landing__href {
-  display: block;
-  font: 600 1.2em "Titillium Web";
-  color: #b1bed2;
-  color: rgba(255, 255, 255, 0.75);
-  color: #3c465a;
-  text-transform: uppercase;
-  padding: 1em 3em;
-  -webkit-transition: background 0.2s;
-  text-decoration: none; }
-  .landing__href:hover {
-    background: rgba(248, 250, 252, 0.1);
-    cursor: pointer; }
-
-.landing__theme {
-  font: 200 3.6em "Titillium Web";
-  color: white;
-  text-align: center; }
-
-.footer__theme {
-  font: 200 2.6em "Titillium Web";
-  color: #646e74;
-  text-align: center; }
-
-.landing__theme__noun__switcher {
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: width 0.2s;
-  margin: 0;
-  height: 98px; }
-
-.landing__theme__nouns {
-  display: block;
-  list-style: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  -webkit-transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.2s; }
-
-.landing__theme__noun {
-  display: block;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font: 700 8em/1.2em "Titillium Web";
-  color: white;
-  text-transform: uppercase; }
-
-.landing__theme__noun__container {
-  display: inline-block; }
-
-.landing__center {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  max-width: 120em;
-  margin: 0 auto; }
-
-.landing__container {
-  margin: 0 auto;
-  width: 100%; }
-
-.landing__supporting {
-  margin: 0;
-  width: 100%;
-  text-align: center;
-  font: 300 1.6em "Titillium Web";
-  color: rgba(255, 255, 255, 0.75);
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.landing__image {
-  display: block;
-  margin: 0 auto;
-  margin-top: 1.4em; }
-
-.landing__title {
-  font: 400 4em "Montserrat";
-  text-transform: uppercase;
-  color: #28303c;
-  color: white;
-  text-align: center;
-  display: block;
-  margin: 2em auto;
-  margin-bottom: 2em;
-  max-width: 17em; }
-
-.landing__details {
-  font: 200 2em "Titillium Web";
-  text-align: center;
-  color: #6e7682; }
-
-#map {
-  height: 20em; }
-
-.landing__action {
-  display: block;
-  margin: 0 auto;
-  max-width: 20em;
-  margin-top: 3em;
-  margin-bottom: 0;
-  text-align: center;
-  color: #b32835;
-  background: white;
-  border-radius: 2em;
-  font: 500 1.6em "Titillium Web";
-  padding: 0.75em 0.5em;
-  opacity: 1;
-  -webkit-transition: opacity 0.2s;
-  background: transparent;
-  color: white;
-  border: 1px solid white; }
-
-.landing__foot {
-  background: white;
-  padding: 1em;
-  border-bottom: 1px solid rgba(230, 230, 230, 0.5); }
-
-.landing__foot__container {
-  max-width: 120em;
-  margin: 0 auto;
-  text-align: center; }
-
-.landing__foot__news {
-  font: 600 1.8em "Titillium Web";
-  color: #282828;
-  display: inline; }
-
-.landing__foot__link {
-  display: inline-block;
-  font: 600 1.6em "Titillium Web";
-  color: white;
-  background: #3c599b;
-  border-radius: 4px;
-  margin-left: 1em;
-  padding: 0.25em 1em;
-  text-decoration: none; }
-
-#buttoncircuit {
-  margin: 0 auto;
-  display: block;
-  margin-top: 1.4em; }
-
-.section {
-  z-index: 5;
-  position: relative; }
-
-.section__bg--graph {
-  background: url("../images/graphics/graphthree.svg") no-repeat center top;
-  z-index: 10; }
-
-.section__head--old {
-  font: 200 3em "Titillium Web";
-  color: #282828;
-  text-align: center;
-  margin-bottom: 0.125em; }
-
-.section__description {
-  font: 500 1.8em/1.2em "Titillium Web";
-  text-align: center;
-  color: rgba(40, 40, 40, 0.7);
-  max-width: 30em;
-  margin: 0 auto; }
-
-.section__description--split {
-  max-width: 100%;
-  width: 100%; }
-
-.section__head--left {
-  font: 200 3em "Titillium Web";
-  color: #282828;
-  text-align: left;
-  margin-bottom: 0.125em; }
-
-.section__description--left {
-  font: 500 1.8em/1.4em "Titillium Web";
-  text-align: left;
-  color: rgba(40, 40, 40, 0.7);
-  max-width: 30em;
-  margin: 0 auto; }
-
-.section__description--white {
-  color: white; }
-
-.sponsor {
-  display: block;
-  width: 21.5%;
-  margin: 1em 1.75%;
-  height: 16em;
-  background: #f0f0f0;
-  float: left;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center; }
-
-.sponsor__logo {
-  display: block;
-  width: 80%;
-  margin: 0 auto; }
-
-.sponsor__logo--100 {
-  width: 100%; }
-
-.sponsor__logo--60 {
-  width: 50%; }
-
-.delegate__reasons {
-  max-width: 80em;
-  margin: 0 auto;
-  margin-top: 2em; }
-
-.delegate__reason {
-  display: block;
-  width: 31.3333%;
-  float: left;
-  margin: 1em 1%; }
-
-.delegate__reason__image {
-  display: block;
-  height: 4em;
-  margin: 0 auto;
-  margin-bottom: 1em; }
-
-.delegate__reason__title {
-  font: 500 2em "Titillium Web";
-  color: #282828;
-  text-align: center;
-  margin-bottom: 0.25em; }
-
-.delegate__reason__description {
-  font: 500 1.6em "Titillium Web";
-  color: rgba(40, 40, 40, 0.5);
-  text-align: center; }
-
-.speakers {
-  max-width: 100em;
-  border-radius: 4px;
-  background: #f8f8f8;
-  margin: 0 auto;
-  border: 1px solid #f0f0f0; }
-
-.speakers__intro {
-  height: 100%;
-  width: 55%;
-  float: left;
-  padding: 3em 2em;
-  border-right: 1px solid #f2f2f2; }
-
-.speakers__points {
-  height: 100%;
-  width: 45%;
-  float: left; }
-
-.speaker__point {
-  display: block;
-  padding: 1em 2em;
-  border-bottom: 1px solid #f2f2f2; }
-  .speaker__point:last-of-type {
-    border-bottom: 0; }
-
-.speaker__point__image {
-  display: block;
-  width: 3.25em; }
-
-.speaker__point__description {
-  font: 500 1.6em "Titillium Web";
-  color: rgba(40, 40, 40, 0.5); }
-
-.sponsors {
-  padding: 8em 2em;
-  background: rgba(25, 112, 200, 0.125); }
-
-.contact {
-  padding: 8em 2em;
-  background: rgba(25, 112, 200, 0.125); }
-
-.contact__container {
-  max-width: 120em;
-  margin: 0 auto; }
-
-.contact__logo {
-  height: 8em;
-  display: block;
-  margin: 0 auto; }
-
-.contact__message {
-  font: 200 3em "Titillium Web";
-  text-align: center;
-  margin: 1em 0;
-  color: #3c465a; }
-
-.contact__link {
-  display: block;
-  margin: 0 auto;
-  max-width: 20em;
-  font: 600 1.6em "Titillium Web";
-  text-align: center;
-  color: #1970b7;
-  width: 14em;
-  background: white;
-  border-radius: 2px;
-  padding: 0.75em 0.5em;
-  margin: 2em auto;
-  text-decoration: none; }
-  .contact__link:hover {
-    background: #f8f8f8;
-    cursor: pointer; }
-  .contact__link:visited {
-    text-decoration: none; }
-
-.contact__card {
-  max-width: 80em;
-  margin: 0 auto;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
-
-.contact__card__head {
-  font: 100 3em "Titillium Web";
-  text-align: center;
-  color: #8c96a0;
-  margin-bottom: 0.125em; }
-
-.contact__card__message {
-  font: 300 1.8em/1.2em "Titillium Web";
-  text-align: center;
-  color: rgba(60, 70, 90, 0.75);
-  max-width: 22.5em;
-  margin: 0 auto; }
-
-.section__bounds {
-  max-width: 120em;
-  margin: 0 auto; }
-
-.section__head {
-  margin-bottom: 2em; }
-
-.section__title {
-  font: 400 2em "Montserrat";
-  color: rgba(140, 144, 160, 0.9);
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0.5em; }
-
-.section__description {
-  font: 300 1.8em/1.4em "Titillium Web";
-  text-align: center;
-  color: rgba(140, 144, 160, 0.75); }
-
-.section__description--white {
-  color: white; }
-
-.section__content--split {
-  display: table-cell;
-  width: 55%;
-  height: 20em;
-  border-left: 1px solid rgba(140, 144, 160, 0.125); }
-
-.section {
-  width: 100%;
-  margin: 0 auto; }
-
-.section--pad {
-  padding: 4em 0; }
-
-.section__landing {
-  border-bottom: 1px solid rgba(140, 144, 160, 0.125);
-  background: #f5f5fa; }
-
-.section__border__double {
-  border-bottom: 1px solid rgba(140, 144, 160, 0.125); }
-
-.section__sponsorship__contribution {
-  -webkit-transition: background 0.2s; }
-
-.section__container {
-  max-width: 120em;
-  margin: 0 auto;
-  padding: 6em 0; }
-
-.section__container--split {
-  padding: 0; }
-
-.section__split {
-  width: 100%;
-  display: table; }
-
-.section__header {
-  margin-bottom: 4em; }
-
-.section__header--split {
-  width: 45%;
-  display: table-cell;
-  vertical-align: middle;
-  padding: 2em; }
-
-.section__title--landing {
-  font: 400 3em "Montserrat";
-  color: rgba(60, 70, 80, 0.75); }
-
-.section__description--landing {
-  font: 300 2em/1.4em "Titillium Web";
-  color: rgba(140, 144, 160, 0.85); }
-
-.section__title--split {
-  text-align: left; }
-
-.section__description--split {
-  text-align: left;
-  width: 100%; }
-
 .spons__grid {
   margin: 0 auto;
   margin-top: 4em;
@@ -588,6 +102,9 @@ h1 {
   flex-wrap: wrap;
   -webkit-align-items: center;
   align-items: center; }
+
+.spons__grid__row--pad {
+  padding: 0.5em 0; }
 
 .spons__grid__box {
   display: block;
@@ -616,47 +133,16 @@ h1 {
   .spons__grid__box--silver:nth-child(1) {
     margin-right: 1em; }
 
-.btn {
-  font: 300 1.4em "Montserrat";
-  display: block;
-  margin: 0 auto;
-  padding: 1em 1.5em;
-  text-align: center;
-  width: intrinsic;
-  border-radius: 2em;
-  cursor: pointer;
-  -webkit-transition: background 0.2s, color 0.2s;
-  background: transparent; }
+.spons__grid__box--silver--empty {
+  height: 18.4em;
+  background: #e6eaee;
+  margin-right: 1em; }
+  .spons__grid__box--silver--empty:nth-child(5) {
+    margin-right: 0; }
 
-.btn--dark {
-  color: #828ca0;
-  border: 2px solid #828ca0;
-  cursor: pointer; }
-  .btn--dark:link {
-    color: #828ca0;
-    border: 2px solid #828ca0; }
-  .btn--dark:visited {
-    color: #828ca0;
-    border: 2px solid #828ca0; }
-  .btn--dark:hover {
-    cursor: pointer;
-    background: #828ca0;
-    color: white; }
-
-.btn--white {
-  color: white;
-  border: 2px solid white;
-  cursor: pointer; }
-  .btn--white:link {
-    color: white;
-    border: 2px solid white; }
-  .btn--white:visited {
-    color: white;
-    border: 2px solid white; }
-  .btn--white:hover {
-    cursor: pointer;
-    background: white;
-    color: #3c465a; }
+.spons__grid__box--silver--empty--actually {
+  background: 0;
+  box-shadow: none; }
 
 .bgc--manulife {
   background: #00763a url("../images/logos/manulife.png") no-repeat center center;
@@ -688,372 +174,50 @@ h1 {
   background-size: 100%;
   box-shadow: 0px 1px 0px #ba7205; }
 
-.delegate__category {
-  margin: 0 2.5%;
-  width: 20%;
-  height: 16em;
-  border-radius: 4px;
-  border: 1px solid rgba(200, 200, 200, 0.125);
-  background: #f0f5fa;
-  float: left; }
+.bgc--dropbox {
+  background: #017ee5 url("../images/logos/dropbox.png") no-repeat center center;
+  background-size: 100%;
+  box-shadow: 0px 1px 0px #01467f; }
 
-.contribution {
-  margin: 0 auto;
-  margin: 2em auto 6em auto;
-  max-width: 60em;
-  border-radius: 4px;
-  padding: 1em 2em 3em 2em;
-  -webkit-transition: background 0.2s, color 0.2s; }
+.bgc--dig {
+  background: #00a651 url("../images/logos/dig.png") no-repeat center center;
+  background-size: 100%;
+  box-shadow: 0px 1px 0px #00401f; }
 
-.group {
-  -webkit-transition: background 0.2s, color 0.2s; }
+.bgc--eno {
+  background: #0054a6 url("../images/logos/eno.png") no-repeat center center;
+  background-size: 100%;
+  box-shadow: 0px 1px 0px #002040; }
 
-.group--base {
-  background: #3c465a; }
-  .group--base .contribution {
-    background: #232D41; }
-  .group--base .section__sponsorship__contribution .section__description {
-    color: white; }
-  .group--base .contribution__value {
-    color: white; }
-  .group--base .contribution__sign {
-    color: white; }
-  .group--base .contribution__range::-webkit-slider-runnable-track {
-    background: rgba(255, 255, 255, 0.25); }
-  .group--base .contribution__range::-webkit-slider-thumb {
-    background: white; }
-  .group--base .btn--contribution {
-    color: white;
-    border: 2px solid white;
-    cursor: pointer; }
-    .group--base .btn--contribution:link {
-      color: white;
-      border: 2px solid white; }
-    .group--base .btn--contribution:visited {
-      color: white;
-      border: 2px solid white; }
-    .group--base .btn--contribution:hover {
-      cursor: pointer;
-      background: white;
-      color: #3c465a; }
+.bgc--couch {
+  background: #1e1e1e url("../images/logos/couch.png") no-repeat center center;
+  background-size: 100%;
+  box-shadow: 0px 1px 0px black; }
 
-.group--bronze {
-  background: #cd7f32; }
-  .group--bronze .contribution {
-    background: #B46619; }
-  .group--bronze .section__sponsorship__contribution .section__description {
-    color: white; }
-  .group--bronze .contribution__value {
-    color: white; }
-  .group--bronze .contribution__sign {
-    color: white; }
-  .group--bronze .contribution__range::-webkit-slider-runnable-track {
-    background: rgba(255, 255, 255, 0.25); }
-  .group--bronze .contribution__range::-webkit-slider-thumb {
-    background: white; }
-  .group--bronze .btn--contribution {
-    color: white;
-    border: 2px solid white;
-    cursor: pointer; }
-    .group--bronze .btn--contribution:link {
-      color: white;
-      border: 2px solid white; }
-    .group--bronze .btn--contribution:visited {
-      color: white;
-      border: 2px solid white; }
-    .group--bronze .btn--contribution:hover {
-      cursor: pointer;
-      background: white;
-      color: #cd7f32; }
-
-.group--silver {
-  background: #C0C0C0; }
-  .group--silver .contribution {
-    background: #A7A7A7; }
-  .group--silver .section__sponsorship__contribution .section__description {
-    color: #1e283c; }
-  .group--silver .contribution__value {
-    color: #1e283c; }
-  .group--silver .contribution__sign {
-    color: #1e283c; }
-  .group--silver .contribution__range::-webkit-slider-runnable-track {
-    background: rgba(255, 255, 255, 0.25); }
-  .group--silver .contribution__range::-webkit-slider-thumb {
-    background: #1e283c; }
-  .group--silver .btn--contribution {
-    color: #1e283c;
-    border: 2px solid #1e283c;
-    cursor: pointer; }
-    .group--silver .btn--contribution:link {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--silver .btn--contribution:visited {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--silver .btn--contribution:hover {
-      cursor: pointer;
-      background: #1e283c;
-      color: #C0C0C0; }
-
-.group--gold {
-  background: #FFD700; }
-  .group--gold .contribution {
-    background: #E6BE00; }
-  .group--gold .section__sponsorship__contribution .section__description {
-    color: #1e283c; }
-  .group--gold .contribution__value {
-    color: #1e283c; }
-  .group--gold .contribution__sign {
-    color: #1e283c; }
-  .group--gold .contribution__range::-webkit-slider-runnable-track {
-    background: rgba(255, 255, 255, 0.25); }
-  .group--gold .contribution__range::-webkit-slider-thumb {
-    background: #1e283c; }
-  .group--gold .btn--contribution {
-    color: #1e283c;
-    border: 2px solid #1e283c;
-    cursor: pointer; }
-    .group--gold .btn--contribution:link {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--gold .btn--contribution:visited {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--gold .btn--contribution:hover {
-      cursor: pointer;
-      background: #1e283c;
-      color: #FFD700; }
-
-.group--platinum {
-  background: #E5E4E2; }
-  .group--platinum .contribution {
-    background: #CCCBC9; }
-  .group--platinum .section__sponsorship__contribution .section__description {
-    color: #1e283c; }
-  .group--platinum .contribution__value {
-    color: #1e283c; }
-  .group--platinum .contribution__sign {
-    color: #1e283c; }
-  .group--platinum .contribution__range::-webkit-slider-runnable-track {
-    background: rgba(255, 255, 255, 0.25); }
-  .group--platinum .contribution__range::-webkit-slider-thumb {
-    background: #1e283c; }
-  .group--platinum .btn--contribution {
-    color: #1e283c;
-    border: 2px solid #1e283c;
-    cursor: pointer; }
-    .group--platinum .btn--contribution:link {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--platinum .btn--contribution:visited {
-      color: #1e283c;
-      border: 2px solid #1e283c; }
-    .group--platinum .btn--contribution:hover {
-      cursor: pointer;
-      background: #1e283c;
-      color: #E5E4E2; }
-
-.contribution__value {
-  font: 100 4em "Titillium Web";
-  text-align: center;
-  margin: 0;
-  -webkit-transition: background 0.2s, color 0.2s; }
-
-.contribution__sign {
-  font: 300 1.2em "Montserrat";
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: background 0.2s, color 0.2s; }
-
-.contribution__range {
-  margin-top: 2em;
-  -webkit-appearance: none;
-  width: 100%;
-  background: transparent;
-  cursor: pointer; }
-  .contribution__range::-webkit-slider-runnable-track {
-    width: 100%;
-    border-radius: 1.25em;
-    height: 0.5em;
-    -webkit-transition: background 0.2s, color 0.2s; }
-  .contribution__range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 3em;
-    width: 3em;
-    backgorund: red;
-    border-radius: 1.5em;
-    position: relative;
-    margin-top: -1.25em;
-    -webkit-transition: background 0.2s, color 0.2s; }
-    .contribution__range::-webkit-slider-thumb::after {
-      position: absolute;
-      border: 1px solid red;
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0; }
-
-.numbers__grid__box {
-  float: left; }
-
-.numbers__grid__box--big {
-  height: 30em;
-  width: 30em;
-  padding: 2em; }
-
-.numbers__grid__box--small {
-  height: 15em;
-  width: 15em; }
-
-.numbers__grid__box--blue {
-  background: #1970B7;
-  color: #FFFFFF; }
-
-.numbers__grid__box--red {
-  background: #BE222B; }
-
-.numbers__grid__box--white {
-  background: #FFFFFF; }
-
-.numbers__grid__num--big {
-  font: 100 8em "Titillium Web"; }
-
-.barchart__set {
-  display: block;
-  position: relative;
-  padding: 1em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
-  .barchart__set:last-of-type {
-    border-bottom: none; }
-
-.barchart__set__visual {
-  background: #1970B7;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  z-index: -1; }
-
-.barchart__set__visual--100 {
-  width: 100%; }
-
-.barchart__set__visual--50 {
-  width: 50%; }
-
-.barchart__set__visual--35 {
-  width: 25%; }
-
-.barchart__set__visual--10 {
-  width: 10%; }
-
-.barchart__set__visual--5 {
-  width: 5%; }
-
-.barchart__set__number {
-  font: 300 2.2em/1.2em "Titillium Web";
-  color: white; }
-
-.barchart__set__category {
-  font: 400 1em "Montserrat";
-  color: white;
-  text-transform: uppercase; }
-
-.fraction {
-  height: 10em;
-  padding-bottom: 20em;
-  padding-top: 0; }
-
-.fraction__set {
-  display: inline-block;
-  width: 25%;
-  margin: 0;
-  float: left; }
-  .fraction__set:nth-of-type(2) {
-    padding-top: 4.772em; }
-  .fraction__set:nth-of-type(3) {
-    padding-top: 1.28em; }
-  .fraction__set:nth-of-type(4) {
-    padding-top: 3.294em; }
-
-.fraction__set__box {
-  width: 75%;
-  margin: 0 auto;
-  background: whitesmoke;
-  box-shadow: 0px 1px 0px rgba(60, 60, 60, 0.125);
-  overflow: hidden;
-  border: 3px solid #2294F2;
-  border-radius: 4px;
-  background: #2294F2;
-  box-shadow: 0px 1px 0px #1D80D1; }
-
-.fraction__set__box__n {
-  font: 500 3em/1.2em "Titillium Web";
-  color: #64686c;
-  width: 25%;
-  float: left;
-  padding: 0;
-  background: white;
-  text-align: center; }
-
-.fraction__set__box__i {
-  float: left;
-  width: 75%; }
-
-.fraction__set__box__p {
-  font: 400 1.2em/1.5em "Montserrat";
-  color: rgba(255, 255, 255, 0.85);
-  padding: 0 0.5em; }
-
-.fraction__set__box__c {
-  font: 400 1.4em/1.2857em "Montserrat";
-  color: white;
-  text-transform: uppercase;
-  padding: 0 0.5em; }
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 500; }
-
-.nav__logo {
-  display: block;
-  float: left;
-  padding: 2.5em;
-  background: url("../images/logo-link.svg") no-repeat; }
-
-.qcbt__page {
+.page__container {
   position: relative;
   z-index: 100; }
 
-.qcbt__section {
-  border-bottom: 1px solid rgba(230, 233, 236, 0.5); }
-
-.qcbt__section--no-border {
-  border: 0; }
-
-.qcbt__section--landing {
+.section--landing {
   padding: 8em 2em; }
 
-.qcbt__section--supporting {
+.section--supporting {
   padding: 6em 2em; }
 
-.qcbt__section--intermediary {
+.section--intermediary {
   padding: 4em 2em; }
 
-.qcbt__section--custom {
-  padding: 0; }
-
-.qcbt__section--overflow {
+.section--overflow {
   overflow: hidden; }
 
-.qcbt__section__bounds {
+.section--border {
+  border-bottom: 1px solid rgba(230, 233, 236, 0.5); }
+
+.section__bounds {
   max-width: 96em;
   margin: 0 auto; }
 
-.qcbt__section__flex {
+.section__flex {
   display: -webkit-flex;
   display: flex; }
 
@@ -1102,7 +266,8 @@ h1 {
 
 .qcbt__section__text__title--landing {
   font-size: 3.6em;
-  margin: 0.4em 0; }
+  margin: 0.4em 0;
+  text-align: center; }
 
 .qcbt__section__text__title--small {
   max-width: 18em;
@@ -1148,119 +313,98 @@ h1 {
 .qcbt__section__compliment--center {
   width: 100%; }
 
-.qcbt__button {
-  font: 300 1.4em "Montserrat";
-  display: block;
-  padding: 1em 1.5em;
-  text-align: center;
+.button {
+  display: table;
   width: intrinsic;
-  border-radius: 2em;
+  font: 300 1.4em "Montserrat";
+  padding: 1em 1.5em;
+  margin: 0 auto;
   cursor: pointer;
-  background: transparent;
+  text-align: center;
   text-decoration: none;
+  background: transparent;
+  border-radius: 2em;
   -webkit-transition: background 0.2s, color 0.2s;
   -moz-transition: background 0.2s, color 0.2s;
   -ms-transition: background 0.2s, color 0.2s;
   -o-transition: background 0.2s, color 0.2s;
   transition: background 0.2s, color 0.2s; }
 
-.qcbt__button--center {
-  margin: 0 auto; }
+.button--dark:link {
+  text-decoration: none;
+  color: #828ca0;
+  border: 2px solid #828ca0; }
+.button--dark:visited {
+  text-decoration: none;
+  color: #828ca0;
+  border: 2px solid #828ca0; }
+.button--dark:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: #828ca0;
+  color: white; }
+.button--dark:active {
+  text-decoration: none;
+  background: #545e72; }
 
-.qcbt__button--top-margin {
+.button--blue:link {
+  text-decoration: none;
+  color: #2294f2;
+  border: 2px solid #2294f2; }
+.button--blue:visited {
+  text-decoration: none;
+  color: #2294f2;
+  border: 2px solid #2294f2; }
+.button--blue:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: #2294f2;
+  color: white; }
+.button--blue:active {
+  text-decoration: none;
+  background: #0066c4; }
+
+.button--white:link {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white; }
+.button--white:visited {
+  text-decoration: none;
+  color: white;
+  border: 2px solid white; }
+.button--white:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: white;
+  color: #2294f2; }
+.button--white:active {
+  text-decoration: none;
+  background: #d1d1d1; }
+
+.button--orange:link {
+  text-decoration: none;
+  color: #e67e22;
+  border: 2px solid #e67e22; }
+.button--orange:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border: 2px solid #e67e22; }
+.button--orange:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: #e67e22;
+  color: white; }
+.button--orange:active {
+  text-decoration: none;
+  background: #b85000; }
+
+.button--top-margin {
   margin-top: 2em; }
 
-.qcbt__button--navigation {
+.button--navigation {
   font-size: 1.2em;
-  padding: 0.75em 1.5em; }
-
-.qcbt__button--dark {
-  color: #828ca0;
-  border: 2px solid #828ca0;
-  cursor: pointer;
-  text-decoration: none; }
-  .qcbt__button--dark:link {
-    color: #828ca0;
-    border: 2px solid #828ca0;
-    text-decoration: none; }
-  .qcbt__button--dark:visited {
-    color: #828ca0;
-    border: 2px solid #828ca0;
-    text-decoration: none; }
-  .qcbt__button--dark:hover {
-    cursor: pointer;
-    background: #828ca0;
-    color: white;
-    text-decoration: none; }
-  .qcbt__button--dark:active {
-    background: #545e72;
-    text-decoration: none; }
-
-.qcbt__button--white {
-  color: white;
-  border: 2px solid white;
-  cursor: pointer;
-  text-decoration: none; }
-  .qcbt__button--white:link {
-    color: white;
-    border: 2px solid white;
-    text-decoration: none; }
-  .qcbt__button--white:visited {
-    color: white;
-    border: 2px solid white;
-    text-decoration: none; }
-  .qcbt__button--white:hover {
-    cursor: pointer;
-    background: white;
-    color: #2294F2;
-    text-decoration: none; }
-  .qcbt__button--white:active {
-    background: #D1D1D1;
-    text-decoration: none; }
-
-.qcbt__button--blue {
-  color: #2294F2;
-  border: 2px solid #2294F2;
-  cursor: pointer;
-  text-decoration: none; }
-  .qcbt__button--blue:link {
-    color: #2294F2;
-    border: 2px solid #2294F2;
-    text-decoration: none; }
-  .qcbt__button--blue:visited {
-    color: #2294F2;
-    border: 2px solid #2294F2;
-    text-decoration: none; }
-  .qcbt__button--blue:hover {
-    cursor: pointer;
-    background: #2294F2;
-    color: white;
-    text-decoration: none; }
-  .qcbt__button--blue:active {
-    background: #0066C4;
-    text-decoration: none; }
-
-.qcbt__button--orange {
-  color: #e67e22;
-  border: 2px solid #e67e22;
-  cursor: pointer;
-  text-decoration: none; }
-  .qcbt__button--orange:link {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    text-decoration: none; }
-  .qcbt__button--orange:visited {
-    color: #e67e22;
-    border: 2px solid #e67e22;
-    text-decoration: none; }
-  .qcbt__button--orange:hover {
-    cursor: pointer;
-    background: #e67e22;
-    color: white;
-    text-decoration: none; }
-  .qcbt__button--orange:active {
-    background: #B85000;
-    text-decoration: none; }
+  padding: 0.75em 1.5em;
+  margin: 0; }
 
 .qcbt__bg--dark {
   background: #545e72;
@@ -1959,18 +1103,13 @@ h1 {
   margin: 0 2em;
   position: relative; }
 
-.qcbt__widget__speakers__speaker--down-1 {
-  margin-top: 8em; }
-
-.qcbt__widget__speakers__speaker--down-2 {
-  margin-top: 4em; }
-
 .qcbt__widget__speakers__speaker__image {
   display: block;
+  margin: 0 auto;
   height: 20em;
   width: 20em;
-  border-radius: 4px;
-  border: 2px solid rgba(175, 175, 175, 0.5); }
+  box-shadow: 0px 0px 6px rgba(60, 60, 60, 0.25);
+  border-radius: 4px; }
 
 .qcbt__widget__speakers__speaker__name {
   font: 400 1.4em "Montserrat";
@@ -1978,6 +1117,12 @@ h1 {
   text-align: center;
   color: #969696;
   margin-top: 1em; }
+
+.qcbt__widget__speakers__speaker__title {
+  font: 400 1.1em "Montserrat";
+  text-transform: uppercase;
+  text-align: center;
+  color: #bebebe; }
 
 .qcbt__member__card {
   height: 50em;
@@ -2193,11 +1338,6 @@ h1 {
     transform: rotate(0deg) translateY(75em); } }
 
 @media (max-width: 1200px) {
-  .section__container {
-    max-width: 90em;
-    margin: 0 auto;
-    padding: 4em 0; }
-
   .spons__grid {
     width: 85%; }
 

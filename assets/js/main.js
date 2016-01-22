@@ -166,17 +166,6 @@ $(function() {
 			}, 500);
 		}, 4500);
 
-		// // using the history API
-		// $('.landing__href').click(function(e) {
-		// 	e.preventDefault();
-		// 	// pushState
-		// 	window.history.pushState(null, 'Title', $(e.currentTarget).attr('href'));
-		// 	//$('.dick').load($(e.currentTarget).attr('href'))
-		// });
-
-
-		//alert($(window).width())
-
 
 		$('.page__container').css('padding-top', $('.header__container').outerHeight());
 
@@ -252,27 +241,6 @@ $(function() {
 			}, 300);
 		}
 
-
-
-		
-		// elementSpringTo('#mem-avatar-2', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-3', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-4', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-5', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-6', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-7', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-8', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-9', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-10', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-11', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-12', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-13', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-14', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-15', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-16', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-17', 0, 0, [120, 10, 3], 0, 0, 0);
-		// elementSpringTo('#mem-avatar-18', 0, 0, [120, 10, 3], 0, 0, 0);
-
 		dragID = undefined;
 
 		$('.ui-draggable').draggable({
@@ -286,22 +254,6 @@ $(function() {
 				drag = false;
 			}
 		});
-
-//		elementSpringTo('.qcbt__widget__team__member__avatar', 0, 0, [120, 10, 3], 0, 0, 0);
-		//elementSpringTo('.qcbt__widget__card__card', 0, 0, [120, 10, 3], 0, 0, 0);
-		
-		// window.setInterval(function() {
-		// 	//for (var i = 0; i < 75; i++)
-		// 	if (i == 75)
-		// 		return false;
-		// 	else
-		// 		$('#num').text(i)
-
-		// 	i++;
-		// }, 10);
-
-		
-
 
 	})(jQuery);
 
