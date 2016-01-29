@@ -1,254 +1,47 @@
+// MAIN
+// ----
+//
+// main.scss
+//
+// This brings all the SCSS files together. Watch this file 
+// and write it into 'main.css' to make changes.
+//
+
+
+
 // BASE
 // ----
 
-@import "base/reset";
-@import "base/variables";
-// include body declaration here
+@import "base/base";
+
 
 // HELPERS
 // -------
-@import "base/clearfix";
-@import "base/boxmodel";
 
-// TYPOGRAPHY
+@import "helpers/helpers";
+
+
+// COMPONENTS
 // ----------
 
-// FONTS
-// -----
+@import "components/components";
 
 
+// MODULES
+// -------
 
+@import "modules/modules";
 
-@import "base/modal";
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-// STYLES
-// ------
+// PAGE
+// ----
 
-body {
-	margin: 0;
-	padding: 0;
-	// reset font-size
-	font-size: 62.5%;
-}
+@import "page/page";
 
+	
 
 
 
 
-
-
-
-
-	.spons__grid {
-		margin: 0 auto;
-		margin-top: 4em;
-		margin-bottom: 4em;
-		// original width is 0.8*1200 = 960px
-		width: 100%;
-	}
-
-
-	.spons__grid__row {
-		width: 100%;
-		// flexbox
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: row;
-				flex-direction: row;
-		-webkit-flex-wrap: wrap;
-				flex-wrap: wrap;
-		-webkit-align-items: center;
-				align-items: center;
-	}
-
-
-	.spons__grid__row--pad {
-		padding: 0.5em 0;
-	}
-
-
-		.spons__grid__box {
-			display: block;
-			// flexbox
-			-webkit-flex: 1 0 auto;
-			flex: 1 0 auto;
-			// default margins
-			margin: 0;
-			// shadow?
-			box-shadow: 0px 1px 0px rgba(130,140,160,0.75);
-		}
-
-
-		.spons__grid__box--container {
-			height: 30.2em;
-			display: block;
-			// flexbox
-			-webkit-flex: 1 0 auto;
-			flex: 1 0 auto;
-			// default margins
-
-
-			.spons__grid__row:nth-child(1) {
-				margin-bottom: 1em;
-			}
-
-
-		}
-
-
-		.spons__grid__box--gold {
-			height: 30.2em;
-			background: rgb(230,234,238);
-			margin-right: 1em;
-		}
-
-
-		.spons__grid__box--silver {
-			height: 14.6em;
-			background: rgb(230,234,238);
-			margin: 0;
-
-			&:nth-child(1) {
-				margin-right: 1em;
-			}
-
-		}
-
-
-		.spons__grid__box--silver--empty {
-			height: 18.4em;
-			background: rgb(230,234,238);
-			margin-right: 1em;
-
-			&:nth-child(5) {
-				margin-right: 0;
-			}
-
-		}
-
-
-		.spons__grid__box--silver--empty--actually {
-			background: 0;
-			box-shadow: none;
-
-		}
-
-
-
-.bgc--manulife {
-	background: #00763A url('../images/logos/manulife.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(#00763A, 20);
-}
-
-
-.bgc--rbc {
-	background: #0C5FA8 url('../images/logos/rbc.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(#0C5FA8, 20);
-}
-
-
-.bgc--accenture {
-	background: #A0112D url('../images/logos/accenture.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(#A0112D, 20);
-}
-
-
-.bgc--ibm {
-	background: rgb(37,114,190) url('../images/logos/ibm.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(37,114,190), 20);
-}
-
-
-.bgc--oracle {
-	background: rgb(224,32,34) url('../images/logos/oracle.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(224,32,34), 20);
-}
-
-
-.bgc--wealthsimple {
-	background: rgb(249,167,44) url('../images/logos/wealthsimple.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(249,167,44), 20);
-}
-
-
-.bgc--dropbox {
-	background: rgb(1,126,229) url('../images/logos/dropbox.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(1,126,229), 20);
-}
-
-
-.bgc--dig {
-	background: rgb(0,166,81) url('../images/logos/dig.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(0,166,81), 20);
-}
-
-
-.bgc--eno {
-	background: rgb(0,84,166) url('../images/logos/eno.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(0,84,166), 20);
-}
-
-
-.bgc--couch {
-	background: rgb(30,30,30) url('../images/logos/couch.png') no-repeat center center;
-	background-size: 100%;
-	box-shadow: 0px 1px 0px darken(rgb(30,30,30), 20);
-}
-
-
-
-
-
-
-
-
-
-
-
-@import "_main--improved";
-
-
-@media (max-width: 1200px) {
-
-	// grid
-	.spons__grid {
-		// original width is 0.85*960 = 816px
-		width: 85%;
-	}
-
-
-		.spons__grid__box {
-		}
-
-
-		.spons__grid__box--container {
-			height: 23.7em;
-
-
-		}
-
-
-		.spons__grid__box--gold {
-			height: 23.7em;
-		}
-
-
-		.spons__grid__box--silver {
-			height: 11.35em;
-
-		}
-
-}
 
 
