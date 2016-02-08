@@ -1,6 +1,5 @@
-.qcbt__bg--dark {
+	.qcbt__bg--dark {
 		background: rgb(84,94,114);
-		background: rgb(84,94,114) url('../images/bg/numbers--three.svg') no-repeat center center;
 		border-bottom: 1px solid rgba(64,74,84,0.5);
 	}
 
@@ -18,6 +17,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2294f2', end
 
 
 	.b {
+	}
+
+	.qcbt__bg--graph {
+		background: rgb(84,94,114);
+		background: rgb(84,94,114) url('../images/bg/numbers--three.svg') no-repeat center center;
+		border-bottom: 1px solid rgba(64,74,84,0.5);
 	}
 
 

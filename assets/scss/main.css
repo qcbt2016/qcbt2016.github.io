@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,7 +74,7 @@ body {
 .button {
   display: table;
   width: intrinsic;
-  font: 300 1.4em "Montserrat";
+  font: 400 1.4em "Montserrat";
   padding: 1em 1.5em;
   margin: 0 auto;
   cursor: pointer;
@@ -83,7 +83,7 @@ body {
   background: transparent;
   border-radius: 2em;
   -webkit-transition: background 0.2s, color 0.2s;
-  -moz-transition: background 0.2s, color 0.2s;
+  -moztransition: background 0.2s, color 0.2s;
   -ms-transition: background 0.2s, color 0.2s;
   -o-transition: background 0.2s, color 0.2s;
   transition: background 0.2s, color 0.2s; }
@@ -156,6 +156,23 @@ body {
   text-decoration: none;
   background: #b85000; }
 
+.button--inactive {
+  background: rgba(30, 40, 60, 0.5); }
+  .button--inactive:link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9); }
+  .button--inactive:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9); }
+  .button--inactive:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: rgba(30, 40, 60, 0.5);
+    color: rgba(255, 255, 255, 0.9); }
+  .button--inactive:active {
+    text-decoration: none;
+    background: rgba(30, 40, 60, 0.5); }
+
 .button--top-margin {
   margin-top: 2em; }
 
@@ -171,7 +188,7 @@ body {
   background: transparent;
   border: 0;
   -webkit-transition: background 0.2s, border 0.2s;
-  -moz-transition: background 0.2s, border 0.2s;
+  -moztransition: background 0.2s, border 0.2s;
   -ms-transition: background 0.2s, border 0.2s;
   -o-transition: background 0.2s, border 0.2s;
   transition: background 0.2s, border 0.2s; }
@@ -197,9 +214,9 @@ body {
 .qcbt__navigation__links__container {
   float: right;
   opacity: 0;
-  border-right: 1px solid rgba(230, 233, 236, 0.75);
+  border-right: 1px solid rgba(230, 233, 236, 0.5);
   -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
+  -moztransition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s; }
@@ -292,105 +309,107 @@ body {
   display: -webkit-flex;
   display: flex; }
 
-.qcbt__section__text {
+.section__text {
+  font-size: 1em;
   width: 40%;
   display: block; }
 
-.qcbt__section__text--landing {
+.section__text--center {
   width: 100%; }
 
-.qcbt__section__text--center {
-  width: 100%; }
-
-.qcbt__section__text__open {
-  font: 400 1.2em "Montserrat";
+.section__text__open {
+  font: 400 1.2em "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
 
-.qcbt__section__text__open--landing {
+.section__text__open--landing {
   text-align: center;
   max-width: 50em;
   margin: 0 auto; }
 
-.qcbt__section__text__open--center {
+.section__text__open--center {
   text-align: center; }
 
-.qcbt__section__text__open--light {
+.section__text__open--light {
   color: #afafaf; }
 
-.qcbt__section__text__open--dark {
-  color: #c8c8c8; }
+.section__text__open--dark {
+  color: #afafaf; }
 
-.qcbt__section__text__divider {
+.section__text__divider {
   display: block;
   height: 0.2em;
   width: 3em;
-  background: #2294F2;
+  background: #2294f2;
   margin-top: 0.25em; }
 
-.qcbt__section__text__divider--center {
+.section__text__divider--center {
   margin: 0.25em auto 0 auto; }
 
-.qcbt__section__text__title {
-  font: 300 2.8em/1em "Montserrat";
+.section__text__title {
+  font: 400 2.8em/1em "Montserrat", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin: 1em 0 0.4em 0; }
 
-.qcbt__section__text__title--landing {
+.section__text__title--landing {
   font-size: 3.6em;
   margin: 0.4em 0;
   text-align: center; }
 
-.qcbt__section__text__title--small {
+.section__text__title--small {
   max-width: 18em;
   margin: 0.4em auto 0.4em auto; }
 
-.qcbt__section__text__title--center {
+.section__text__title--center {
   text-align: center; }
 
-.qcbt__section--intermediary .qcbt__section__text__title {
+.section--intermediary .section__text__title {
   margin: 0 0 0.4em 0; }
 
-.qcbt__section__text__title--light {
-  color: #2294F2;
+.section__text__title--light {
   color: #494b4e; }
 
-.qcbt__section__text__title--dark {
+.section__text__title--dark {
   color: white; }
 
-.qcbt__section__text__blurb {
-  font: 300 1.6em/1.4em "Titillium Web"; }
+.section__text__blurb {
+  font: 300 1.6em/1.4em "Titillium", Helvetica, Arial, sans-serif; }
 
-.qcbt__section__text__blurb--landing {
+.section__text__blurb--landing {
   font-size: 2em;
   max-width: 32em;
   margin: 0 auto;
   text-align: center; }
 
-.qcbt__section__text__blurb--center {
+.section__text__blurb--center {
   max-width: 30em;
   margin: 0 auto;
   text-align: center; }
 
-.qcbt__section__text__blurb--light {
+.section__text__blurb--light {
   color: #828588; }
 
-.qcbt__section__text__blurb--dark {
+.section__text__blurb--dark {
   color: #f0f3f6; }
 
-.qcbt__section__compliment {
+.section__compliment {
   width: 60%;
   display: block; }
 
-.qcbt__section__compliment--center {
+.section__compliment--center {
   width: 100%; }
 
 .qcbt__widget__card__landing {
   margin: 4em auto;
   width: 36em;
   height: 18em;
-  border-radius: 4px;
-  position: relative;
-  background: url("../images/graphics/landing.png") no-repeat; }
+  position: relative; }
+
+.qcbt__widget__card__landing__border {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 4px dashed rgba(255, 255, 255, 0.5);
+  border-radius: 4px; }
 
 .qcbt__widget__card__card {
   position: absolute;
@@ -402,7 +421,8 @@ body {
   background: white;
   overflow: hidden;
   -webkit-transform: translateY(-40em);
-  -moz-transform: translateY(-40em);
+  -moztransform: translateY(-40em);
+  -ms-transform: translateY(-40em);
   -o-transform: translateY(-40em);
   transform: translateY(-40em); }
 
@@ -428,7 +448,8 @@ body {
 
 .qcbt__widget__card__card--straight--in {
   -webkit-transform: rotate(0deg) translateY(0);
-  -moz-transform: rotate(0deg) translateY(0);
+  -moztransform: rotate(0deg) translateY(0);
+  -ms-transform: rotate(0deg) translateY(0);
   -o-transform: rotate(0deg) translateY(0);
   transform: rotate(0deg) translateY(0);
   -webkit-animation: cardInStraightWebkit 0.4s ease;
@@ -438,7 +459,8 @@ body {
 
 .qcbt__widget__card__card--slant--right--in {
   -webkit-transform: rotate(-4deg) translateY(0);
-  -moz-transform: rotate(-4deg) translateY(0);
+  -moztransform: rotate(-4deg) translateY(0);
+  -ms-transform: rotate(-4deg) translateY(0);
   -o-transform: rotate(-4deg) translateY(0);
   transform: rotate(-4deg) translateY(0);
   -webkit-animation: cardInSlantRightWebkit 0.4s ease;
@@ -448,7 +470,8 @@ body {
 
 .qcbt__widget__card__card--slant--left--in {
   -webkit-transform: rotate(4deg) translateY(0);
-  -moz-transform: rotate(4deg) translateY(0);
+  -moztransform: rotate(4deg) translateY(0);
+  -ms-transform: rotate(4deg) translateY(0);
   -o-transform: rotate(4deg) translateY(0);
   transform: rotate(4deg) translateY(0);
   -webkit-animation: cardInSlantLeftWebkit 0.4s ease;
@@ -458,7 +481,8 @@ body {
 
 .qcbt__widget__card__card--straight--out {
   -webkit-transform: rotate(0deg) translateY(75em);
-  -moz-transform: rotate(0deg) translateY(75em);
+  -moztransform: rotate(0deg) translateY(75em);
+  -ms-transform: rotate(0deg) translateY(75em);
   -o-transform: rotate(0deg) translateY(75em);
   transform: rotate(0deg) translateY(75em);
   -webkit-animation: cardOutStraightWebkit 0.4s ease-in;
@@ -468,7 +492,8 @@ body {
 
 .qcbt__widget__card__card--slant--right--out {
   -webkit-transform: rotate(-4deg) translateY(75em);
-  -moz-transform: rotate(-4deg) translateY(75em);
+  -moztransform: rotate(-4deg) translateY(75em);
+  -ms-transform: rotate(-4deg) translateY(75em);
   -o-transform: rotate(-4deg) translateY(75em);
   transform: rotate(-4deg) translateY(75em);
   -webkit-animation: cardOutSlantRightWebkit 0.4s ease-in;
@@ -478,7 +503,8 @@ body {
 
 .qcbt__widget__card__card--slant--left--out {
   -webkit-transform: rotate(4deg) translateY(75em);
-  -moz-transform: rotate(4deg) translateY(75em);
+  -moztransform: rotate(4deg) translateY(75em);
+  -ms-transform: rotate(4deg) translateY(75em);
   -o-transform: rotate(4deg) translateY(75em);
   transform: rotate(4deg) translateY(75em);
   -webkit-animation: cardOutSlantLeftWebkit 0.4s ease-in;
@@ -777,7 +803,7 @@ body {
   width: 25%; }
 
 .qcbt__widget__team__number__digit {
-  font: 100 4em/1em "Montserrat";
+  font: 400 4em/1em "Montserrat";
   margin-bottom: 0.25em;
   text-align: center;
   color: #2294F2; }
@@ -793,7 +819,7 @@ body {
   padding-right: 4em; }
 
 .qcbt__widget__sponsorship__number__digit {
-  font: 100 3.6em/1em "Montserrat";
+  font: 400 3.6em/1em "Montserrat";
   margin-bottom: 0.25em;
   color: #e6e9ec; }
 
@@ -883,6 +909,197 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #bebebe; }
+
+.sponsors-grid {
+  width: 100%;
+  max-width: 72em;
+  margin: 4em auto;
+  position: relative; }
+
+.sponsors-grid__box {
+  display: block;
+  float: left;
+  position: relative;
+  background: rgba(230, 234, 238, 0.5);
+  border: 1px solid white;
+  -webkit-transition: border 0.2s;
+  -moztransition: border 0.2s;
+  -ms-transition: border 0.2s;
+  -o-transition: border 0.2s;
+  transition: border 0.2s; }
+
+.sponsors-grid__box--gold {
+  height: 36em;
+  width: 50%; }
+
+.sponsors-grid__box--silver {
+  height: 18em;
+  width: 25%; }
+
+.sponsors-grid__box--bronze {
+  height: 14.4em;
+  width: 20%; }
+
+.sponsors-grid__box--manulife {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/manulife--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--rbc {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/rbc--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--oracle {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/oracle--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--dropbox {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/dropbox--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--couch {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/couch--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--dig {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/dig--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--ibm {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/ibm--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--eno {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/eno--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--accenture {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/accenture--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--wealthsimple {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/wealthsimple--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__box--soylent {
+  background: rgba(230, 234, 238, 0.5) url("../images/graphics/soylent--blue.png") no-repeat;
+  background-size: 100%; }
+
+.sponsors-grid__partners {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 2em;
+  background: rgba(230, 234, 238, 0.5);
+  border: 1px solid white;
+  text-align: center; }
+
+.sponsors-grid__partners__text {
+  font: 400 1.2em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em; }
+
+.sponsors-grid__partners__link {
+  font: 400 1.6em/1em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #2294F2;
+  text-decoration: none; }
+
+.sponsors-graph__node--gold {
+  width: 20em;
+  height: 20em;
+  border-radius: 10em; }
+
+.sponsors-graph__node--silver {
+  width: 14em;
+  height: 14em;
+  border-radius: 7em; }
+
+.sponsors-graph__node--bronze {
+  width: 8em;
+  height: 8em;
+  border-radius: 4em; }
+
+.sponsors-graph__node--manulife {
+  left: 50%;
+  margin-left: -20em;
+  top: 8em;
+  background: #3c465a url("../images/logos/manulife--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--rbc {
+  left: 50%;
+  top: 18em;
+  background: #3c465a url("../images/logos/rbc--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--oracle {
+  left: 50%;
+  top: 2em;
+  background: #3c465a url("../images/logos/oracle--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--dropbox {
+  left: 50%;
+  margin-left: 22em;
+  top: 18em;
+  background: #3c465a url("../images/logos/dropbox--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--couch {
+  left: 50%;
+  margin-left: -26em;
+  top: 28em;
+  background: #3c465a url("../images/logos/couch--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--dig {
+  left: 50%;
+  margin-left: -36em;
+  top: 16em;
+  background: #3c465a url("../images/logos/dig--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--ibm {
+  left: 50%;
+  margin-left: 15em;
+  top: 10em;
+  background: #3c465a url("../images/logos/ibm--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--eno {
+  left: 50%;
+  margin-left: -8em;
+  background: #3c465a url("../images/logos/eno--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--accenture {
+  left: 50%;
+  margin-left: -9em;
+  top: 30em;
+  background: #3c465a url("../images/logos/accenture--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--wealthsimple {
+  left: 50%;
+  margin-left: -28em;
+  top: 8em;
+  background: #3c465a url("../images/logos/wealthsimple--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--qic {
+  left: 50%;
+  margin-left: 20em;
+  top: 32em;
+  background: #3c465a url("../images/logos/qic--white.png") no-repeat center center;
+  background-size: 100%; }
+
+.sponsors-graph__node--ece {
+  left: 50%;
+  margin-left: -2em;
+  top: 38em;
+  background: #3c465a url("../images/logos/rbc--white.png") no-repeat center center;
+  background-size: 100%; }
 
 .spons__grid {
   margin: 0 auto;
@@ -1259,7 +1476,6 @@ body {
 
 .qcbt__bg--dark {
   background: #545e72;
-  background: #545e72 url("../images/bg/numbers--three.svg") no-repeat center center;
   border-bottom: 1px solid rgba(64, 74, 84, 0.5); }
 
 .qcbt__bg--blue {
@@ -1274,6 +1490,11 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2294f2', endColorstr='#1970b7',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
+
+.qcbt__bg--graph {
+  background: #545e72;
+  background: #545e72 url("../images/bg/numbers--three.svg") no-repeat center center;
+  border-bottom: 1px solid rgba(64, 74, 84, 0.5); }
 
 .qcbt__bg--off-white {
   background: #f0f4f8;

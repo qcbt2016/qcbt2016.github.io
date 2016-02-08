@@ -27,7 +27,7 @@
 
 
 .section--border {
-	border-bottom: 1px solid rgba(230,233,236,0.5);
+	border-bottom: 1px solid $color--border--section;
 }
 
 
@@ -52,141 +52,136 @@
 				// SECTION TEXT GROUPING
 				// ---------------------
 
-				.qcbt__section__text {
+				.section__text {
+					font-size: $font-size--base;
 					width: 40%;
 					display: block;
 				}
 
 
-				.qcbt__section__text--landing {
+				.section__text--center {
 					width: 100%;
 				}
 
 
-				.qcbt__section__text--center {
-					width: 100%;
-				}
-
-
-					.qcbt__section__text__open {
-						font: 400 1.2em "Montserrat";
+					.section__text__open {
+						font: $font-weight--medium $font-size--text--short $font--helper;
 						text-transform: uppercase;
 					}
 
 
-					.qcbt__section__text__open--landing {
+					.section__text__open--landing {
 						text-align: center;
 						max-width: 50em;
 						margin: 0 auto;
 					}
 
 
-					.qcbt__section__text__open--center {
+					.section__text__open--center {
 						text-align: center;
 					}
 
 
-					.qcbt__section__text__open--light {
-						color: rgb(175,175,175);
+					.section__text__open--light {
+						color: $color--text--short--light;
 					}
 
 
-					.qcbt__section__text__open--dark {
-						color: rgb(200,200,200);
+					.section__text__open--dark {
+						color: $color--text--short--light;
 					}
 
 
-					.qcbt__section__text__divider {
+					.section__text__divider {
 						display: block;
 						height: 0.2em;
 						width: 3em;
-						background: #2294F2;
+						background: $color--text-divider;
 						margin-top: 0.25em;
 					}
 
 
-					.qcbt__section__text__divider--center {
+					.section__text__divider--center {
 						margin: 0.25em auto 0 auto;
 					}
 
 
-					.qcbt__section__text__title {
-						font: 300 2.8em/1em "Montserrat";
+					.section__text__title {
+						font: $font-weight--medium 2.8em/1em $font--helper;
 						text-transform: uppercase;
 						margin: 1em 0 0.4em 0;
 					}
 
 
-					.qcbt__section__text__title--landing {
-						font-size: 3.6em;
+					.section__text__title--landing {
+						font-size: $font-size--text--medium--big;
 						margin: 0.4em 0;
 						text-align: center;
 					}
 
 
-					.qcbt__section__text__title--small {
+					.section__text__title--small {
 						max-width: 18em;
 						margin: 0.4em auto 0.4em auto;
 					}
 
 
-					.qcbt__section__text__title--center {
+					.section__text__title--center {
 						text-align: center;
 					}
 
 
-					.qcbt__section--intermediary .qcbt__section__text__title {
+					.section--intermediary .section__text__title {
 						margin: 0 0 0.4em 0;
 					}
 
 
-					.qcbt__section__text__title--light {
-						color: #2294F2;
-						color: rgb(73,75,78);
+					.section__text__title--light {
+						color: $color--text--medium--light;
 					}
 
 
-					.qcbt__section__text__title--dark {
-						color: rgb(255,255,255);
+					.section__text__title--dark {
+						color: $color--text--medium--dark;
 					}
 
 
-					.qcbt__section__text__blurb {
-						font: 300 1.6em/1.4em "Titillium Web";
+					.section__text__blurb {
+						font: $font-weight--thin 1.6em/1.4em $font--body;
 					}
 
 
-					.qcbt__section__text__blurb--landing {
-						font-size: 2em;
+					.section__text__blurb--landing {
+						font-size: $font-size--text--long--big;
 						max-width: 32em;
 						margin: 0 auto;
 						text-align: center;
 					}
 
 
-					.qcbt__section__text__blurb--center {
+					.section__text__blurb--center {
 						max-width: 30em;
 						margin: 0 auto;
 						text-align: center;
 					}
 
 
-					.qcbt__section__text__blurb--light {
-						color: rgb(130,133,136);
+					.section__text__blurb--light {
+						color: $color--text--long--light;
 					}
 
 
-					.qcbt__section__text__blurb--dark {
-						color: rgb(240,243,246);
+					.section__text__blurb--dark {
+						color: $color--text--long--dark;
 					}
 
 
-				.qcbt__section__compliment {
+				.section__compliment {
 					width: 60%;
 					display: block;
 				}
 
 
-				.qcbt__section__compliment--center {
+				.section__compliment--center {
 					width: 100%;
 				}

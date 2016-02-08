@@ -13,7 +13,7 @@
 	// 1 or 2 pixels
 	display: table;
 	width: intrinsic;
-	font: 300 1.4em "Montserrat";
+	font: 400 1.4em "Montserrat";
 	padding: 1em 1.5em;
 	margin: 0 auto;
 	cursor: pointer;
@@ -21,38 +21,50 @@
 	text-decoration: none;
 	background: transparent;
 	border-radius: 2em;
-	-webkit-transition: background 0.2s, color 0.2s;
-	   -moz-transition: background 0.2s, color 0.2s;
-		-ms-transition: background 0.2s, color 0.2s;
-		 -o-transition: background 0.2s, color 0.2s;
-			transition: background 0.2s, color 0.2s;
+	@include vendor-prefix('transition', 'background 0.2s, color 0.2s');
 }
 
 
 // BUTTON STYLE MIXIN
 // ------------------
 
-@mixin button-style($button-color, $button-color-hover, $button-color-active) {
+@mixin button-style($button-color, $button-color-hover, $button-color-active, $border: true) {
+
+	// no border
+	@if $border == false {
+		background: rgba(30,40,60,0.5);
+	}
 
 	// ambient state
 	&:link {
 		text-decoration: none;
 		color: $button-color;
-		border: 2px solid $button-color;
+		// border
+		@if $border {
+			border: 2px solid $button-color;
+		}
 	}
 
 	// visited state
 	&:visited {
 		text-decoration: none;
 		color: $button-color;
-		border: 2px solid $button-color;
+		// border
+		@if $border {
+			border: 2px solid $button-color;
+		}
 	}
 
 	// hover state
 	&:hover {
 		cursor: pointer;
 		text-decoration: none;	
-		background: $button-color;
+		// depending on if active
+		@if $border {
+			background: $button-color;
+		} @else {
+			background: $button-color-active;
+		}
 		color: $button-color-hover;
 	}
 
@@ -73,6 +85,7 @@
 .button--blue { @include button-style(#2294F2, rgb(255,255,255), #0066C4); }
 .button--white { @include button-style(rgb(255,255,255), #2294F2, #D1D1D1); }
 .button--orange { @include button-style(#e67e22, rgb(255,255,255), #B85000); }
+.button--inactive { @include button-style(rgba(255,255,255,0.9), rgba(255,255,255,0.9), rgba(30,40,60,0.5), $border: false); }
 
 
 // BUTTONS WITH SOME ROOM

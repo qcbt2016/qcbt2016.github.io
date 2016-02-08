@@ -7,11 +7,7 @@
 		z-index: 200;
 		background: transparent;
 		border: 0;
-		-webkit-transition: background 0.2s, border 0.2s;
-		   -moz-transition: background 0.2s, border 0.2s;
-			-ms-transition: background 0.2s, border 0.2s;
-			 -o-transition: background 0.2s, border 0.2s;
-				transition: background 0.2s, border 0.2s;
+		@include vendor-prefix('transition', 'background 0.2s, border 0.2s');
 	}
 
 
@@ -45,12 +41,8 @@
 			//border: 1px solid red;
 			float: right;
 			opacity: 0;
-			border-right: 1px solid rgba(230,233,236,0.75);
-			-webkit-transition: opacity 0.2s;
-			   -moz-transition: opacity 0.2s;
-				-ms-transition: opacity 0.2s;
-				 -o-transition: opacity 0.2s;
-					transition: opacity 0.2s;
+			border-right: 1px solid $color--border--navigation;
+			@include vendor-prefix('transition', 'opacity 0.2s');
 		}
 
 
