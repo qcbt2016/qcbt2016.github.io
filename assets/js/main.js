@@ -19,7 +19,7 @@ $(function() {
 			}
 		})
 
-		var names = ['Elon Musk', 'Larry Ellison', 'Jeff Weiner', 'Michelle Romanow', 'Satya Nadella', 'Steve Jobs', 'Mark Zuckerberg'];
+		var names = ['Elon Musk', 'Larry Ellison', 'Jeff Weiner', 'Michelle Romanow', 'Satya Nadella', 'Steve Jobs', 'Mark Zuckerberg', 'Sundar Pichai'];
 		var orientation = undefined;
 		var name = undefined;
 
