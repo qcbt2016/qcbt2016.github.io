@@ -19,7 +19,7 @@ $(function() {
 			}
 		})
 
-		var names = ['Elon Musk', 'Sheryl Sandberg', 'Bill Gates', 'Michelle Romanow', 'Arlene Dickinson', 'Steve Jobs', 'Mark Zuckerberg'];
+		var names = ['Elon Musk', 'Larry Ellison', 'Jeff Weiner', 'Michelle Romanow', 'Satya Nadella', 'Steve Jobs', 'Mark Zuckerberg'];
 		var orientation = undefined;
 		var name = undefined;
 
