@@ -834,9 +834,12 @@ body {
   border-radius: 6px;
   text-align: center; }
 
+.itinerary__event--date {
+  background: #2294f2; }
+
 .itinerary__event__date {
   font: 400 1.6em "Montserrat", Helvetica, Arial, sans-serif;
-  color: #1e283c;
+  color: white;
   text-transform: uppercase; }
 
 .itinerary__event__time-location {
