@@ -208,7 +208,7 @@ body {
   padding: 1.5em; }
 
 .navigation__links {
-  max-width: 96em;
+  max-width: 120em;
   margin: 0 auto;
   border-radius: 10em;
   overflow: hidden;
@@ -222,7 +222,7 @@ body {
 
 .navigation__link__container {
   display: block;
-  width: 20%;
+  width: 16.6667%;
   float: left;
   background: #fafafa; }
 
@@ -806,6 +806,59 @@ body {
     -ms-transition: background 0.2s, color 0.2s;
     -o-transition: background 0.2s, color 0.2s;
     transition: background 0.2s, color 0.2s; }
+
+.itinerary {
+  margin-top: 4em; }
+
+.itinerary__connector {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+  margin: 0 auto;
+  border-radius: 1em;
+  border: 4px solid #2294f2; }
+
+.itinerary__path {
+  display: block;
+  height: 4em;
+  width: 0.5em;
+  margin: 0.5em auto;
+  border-radius: 0.5em;
+  background: #2294f2; }
+
+.itinerary__event {
+  max-width: 40em;
+  padding: 2em;
+  margin: 1em auto;
+  border: 2px solid #2294f2;
+  border-radius: 6px;
+  text-align: center; }
+
+.itinerary__event__date {
+  font: 400 1.6em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #1e283c;
+  text-transform: uppercase; }
+
+.itinerary__event__time-location {
+  font: 400 1.1em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #afafaf;
+  text-transform: uppercase;
+  margin-bottom: 1em; }
+
+.itinerary__event__name {
+  font: 400 1.6em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #1e283c;
+  text-transform: uppercase; }
+
+.itinerary__event__detail {
+  font: 300 1.4em "Titillium Web", Helvetica, Arial, sans-serif;
+  color: #828588; }
+
+.itinerary__event__attire {
+  font: 400 1.1em "Montserrat", Helvetica, Arial, sans-serif;
+  color: #afafaf;
+  text-transform: uppercase;
+  margin-top: 1em; }
 
 .qcbt__widget__numbers--sponsorship {
   padding-top: 3em; }
