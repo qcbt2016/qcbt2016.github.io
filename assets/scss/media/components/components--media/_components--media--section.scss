@@ -1,0 +1,20 @@
+// COMPONENTS MEDIA SECTION
+// ------------------------
+//
+// _components--media--section.scss
+//
+// This file contains the media queries for the 'section' component
+// 
+
+
+
+// BETWEEN 960px and
+// -----------------
+
+@media (min-width: 96em) {
+
+	body {
+		display: none;
+	}
+
+}

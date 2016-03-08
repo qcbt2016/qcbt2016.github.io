@@ -1,0 +1,39 @@
+// COMPONENTS
+// ----------
+//
+// _components.scss
+//
+// This file brings together reusable parts used throughout the site such as
+// buttons, sections, and navigational components
+// 
+
+
+
+// PAGE CONTAINER
+// --------------
+
+@import "component--page";
+
+
+// BUTTONS
+// -------
+
+@import "component--buttons";
+
+
+// NAVIGATION
+// ----------
+
+@import "component--navigation";
+
+
+// SECTION
+// -------
+
+@import "component--section";
+
+
+// MEDIA
+// -----
+
+@import "components--media/components--media"

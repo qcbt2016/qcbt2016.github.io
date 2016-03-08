@@ -9,15 +9,15 @@ $(function() {
 		var $landingFooter = document.getElementById('landing-footer');
 		var $landingCenter = document.getElementById('landing-center');
 		
-		$(window).scroll(function() {
-			if ($(window).scrollTop() >= 100) {
-				$('.qcbt__navigation').addClass('qcbt__navigation--visible');
-				$('.qcbt__navigation__links__container').addClass('qcbt__navigation__links__container--visible');
-			} else {
-				$('.qcbt__navigation').removeClass('qcbt__navigation--visible');
-				$('.qcbt__navigation__links__container').removeClass('qcbt__navigation__links__container--visible');
-			}
-		})
+		// $(window).scroll(function() {
+		// 	if ($(window).scrollTop() >= 100) {
+		// 		$('.navigation').addClass('navigation--visible');
+		// 		$('.qcbt__navigation__links__container').addClass('qcbt__navigation__links__container--visible');
+		// 	} else {
+		// 		$('.navigation').removeClass('navigation--visible');
+		// 		$('.qcbt__navigation__links__container').removeClass('qcbt__navigation__links__container--visible');
+		// 	}
+		// })
 
 		var names = ['Elon Musk', 'Sheryl Sandberg', 'Bill Gates', 'Michelle Romanow', 'Arlene Dickinson', 'Steve Jobs', 'Mark Zuckerberg'];
 		var orientation = undefined;

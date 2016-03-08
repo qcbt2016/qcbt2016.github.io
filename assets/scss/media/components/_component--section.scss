@@ -13,7 +13,7 @@
 // SECTION TYPES
 // -------------
 
-.section--landing { @include section(12em, 2em); }
+.section--landing { @include section(8em, 2em); }
 .section--supporting { @include section(6em, 2em); }
 .section--intermediary { @include section(4em, 2em); }
 
