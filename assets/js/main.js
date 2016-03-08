@@ -19,7 +19,7 @@ $(function() {
 		// 	}
 		// })
 
-		var names = ['Elon Musk', 'Sheryl Sandberg', 'Bill Gates', 'Michelle Romanow', 'Arlene Dickinson', 'Steve Jobs', 'Mark Zuckerberg'];
+		var names = ['Elon Musk', 'Larry Ellison', 'Sheryl Sandberg', 'Jeff Weiner', 'Michelle Romanow', 'Satya Nadella', 'Steve Jobs', 'Mark Zuckerberg', 'Sundar Pichai'];
 		var orientation = undefined;
 		var name = undefined;
 
@@ -40,7 +40,7 @@ $(function() {
 
 		function displayCard(nameOrienation) {
 			$('.qcbt__widget__card__landing')
-				.append('<article class="qcbt__widget__card__card qcbt__widget__card__card--current qcbt__widget__card__card--' + nameOrienation.orientation + '--in"><p class="qcbt__widget__card__card__header">Challenge The Ordinary. Be The Next</p><span class="qcbt__widget__card__card__table"><h5 class="qcbt__widget__card__card__name">' + names[nameOrienation.name] + '</h5></span></article>')
+				.append('<article class="qcbt__widget__card__card qcbt__widget__card__card--current qcbt__widget__card__card--' + nameOrienation.orientation + '--in"><p class="qcbt__widget__card__card__header">Be The Next</p><span class="qcbt__widget__card__card__table"><h5 class="qcbt__widget__card__card__name">' + names[nameOrienation.name] + '</h5></span></article>')
 		}
 
 		function removeCard() {
