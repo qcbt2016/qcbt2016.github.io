@@ -1515,7 +1515,7 @@ img.phone-portrait {
 @media all and (max-width: 768px) {
   #clockdiv{
   	font-size: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
