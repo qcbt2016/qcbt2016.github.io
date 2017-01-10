@@ -1526,7 +1526,8 @@ img.phone-portrait {
 }
 @media all and (max-width: 500px) {
   #clockdiv > div{
-  padding: 2px;
+  padding: 5px;
+  padding-bottom: 7.5px;
 	border-radius: 1.5px;
   }
 }
@@ -1539,7 +1540,8 @@ img.phone-portrait {
 }
 @media all and (max-width: 500px) {
   #clockdiv div > span{
-  	padding: 4px;
+  	padding: 7.5px;
+    padding-bottom: 7.5px;
   	border-radius: 1.5px;
   }
 }
