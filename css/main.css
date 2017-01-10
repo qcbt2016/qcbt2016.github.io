@@ -97,11 +97,8 @@ body {
   font-size: 14px;
   line-height: 24px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 500px) {
 body {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #777777;
   font-size: 7px;
   line-height: 12px;
      }
