@@ -1518,6 +1518,12 @@ img.phone-portrait {
     padding-bottom: 30px;
   }
 }
+@media all and (max-width: 500px) {
+  #clockdiv{
+  	font-size: 10px;
+    padding-bottom: 30px;
+  }
+}
 
 #clockdiv > div{
 	padding: 10px;
@@ -1531,7 +1537,12 @@ img.phone-portrait {
 	border-radius: 1.5px;
   }
 }
-
+@media all and (max-width: 500px) {
+  #clockdiv > div{
+  padding: 5px;
+	border-radius: 1.5px;
+  }
+}
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
@@ -1539,6 +1550,12 @@ img.phone-portrait {
 	display: inline-block;
 }
 @media all and (max-width: 768px) {
+  #clockdiv div > span{
+  	padding: 7.5px;
+  	border-radius: 1.5px;
+  }
+}
+@media all and (max-width: 500px) {
   #clockdiv div > span{
   	padding: 7.5px;
   	border-radius: 1.5px;
@@ -1554,6 +1571,11 @@ img.phone-portrait {
 	padding-top: 5px;
 }
 @media all and (max-width: 768px) {
+  .smalltext{
+    font-size: 5.5px;
+  }
+}
+@media all and (max-width: 500px) {
   .smalltext{
     font-size: 5.5px;
   }
