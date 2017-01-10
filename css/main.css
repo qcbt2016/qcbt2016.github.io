@@ -4479,7 +4479,7 @@ footer.short-2 .contact-action:hover {
 @media all and (max-width: 767px) {
   .timeline-event {
     padding-bottom: 0;
-    width: 60%;
+    width: 10%;
   }
   .timeline-event .middle {
     display: none;
