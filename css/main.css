@@ -1541,7 +1541,7 @@ img.phone-portrait {
   #clockdiv div > span{
   	padding: 7.5px;
   	border-radius: 1.5px;
-  }  
+  }
 }
 
 .smalltext{
@@ -1552,6 +1552,12 @@ img.phone-portrait {
   letter-spacing: 1px;
 	padding-top: 5px;
 }
+@media all and (max-width: 500px) {
+  .smalltext{
+    font-size: 5.5px;
+  }
+}
+
 
 .accordion-section .icons-large {
   margin-bottom: 0px;
