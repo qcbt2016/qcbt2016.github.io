@@ -1665,6 +1665,10 @@ img.phone-portrait {
 }
 .testimonials-slider p.lead {
   font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  padding-left: 30px;
+  color: #a7a9ac;
 }
 .testimonials-slider .author {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
